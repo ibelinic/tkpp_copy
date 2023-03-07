@@ -4,10 +4,14 @@
 (1) Nastavak rada na projektu iz kolegija "Razvoj programskih proizvoda"
 
 ## Opis projekta
-- Naziv projekta: PetVet Desktop aplikacija
-- Domena / Tema projekta: Problemska domena kojom se ova Desktop aplikacija bavi ponajprije je praćenje zdravstvenog stanja ljubimca te radnih aktivnosti veterinara u virtualnom okruženju. Postojeći dokument obuhvaća određene specifikacije potrebne za implementiranje desktop aplikativnog rješenja u svrhu učinkovitijeg vođenja zdravstvenog života korisnikovog ljubimca u digitalnom obliku te radnih aktivnosti veterinara putem digitaliziranog kalendara aktivnosti. Naime, dokument prikazuje potrebne funkcionalnosti samog budućeg desktop aplikativnog rješenja koje bi trebale biti implementirane u isti pri čemu bi svaki sudionik kreiranja aplikacije bio upućen u potrebne modularnosti.
-- Kolegij na kojem je započet projekt: Razvoj programskih proizvoda
-- Tehnologije koje su prethodno korištene: Tehnologije i opreme koje se koriste za implementaciju desktop aplikativnog rješenja su sljedeće: računalo, DBMS i SQL Server Management Studio za izradu baze podataka, Visual Studio za izradu programskog koda, git i GitHub za verzioniranje programskog koda, GitHub Wiki za pisanje tehničke i projektne dokumentacije, GitHub projects za planiranje i praćenje projektnih zadataka. Projekt se razvijao i dalje će se razvijati koristeći .Net Framework razvojni okvir te vrstu projekta u WinForms obliku.
+### Naziv projekta:
+PetVet Desktop aplikacija
+### Domena / Tema projekta:
+Problemska domena kojom se ova Desktop aplikacija bavi ponajprije je praćenje zdravstvenog stanja ljubimca te radnih aktivnosti veterinara u virtualnom okruženju. Postojeći dokument obuhvaća određene specifikacije potrebne za implementiranje desktop aplikativnog rješenja u svrhu učinkovitijeg vođenja zdravstvenog života korisnikovog ljubimca u digitalnom obliku te radnih aktivnosti veterinara putem digitaliziranog kalendara aktivnosti. Naime, dokument prikazuje potrebne funkcionalnosti samog budućeg desktop aplikativnog rješenja koje bi trebale biti implementirane u isti pri čemu bi svaki sudionik kreiranja aplikacije bio upućen u potrebne modularnosti.
+### Kolegij na kojem je započet projekt:
+Razvoj programskih proizvoda
+### Tehnologije koje su prethodno korištene:
+Tehnologije i opreme koje se koriste za implementaciju desktop aplikativnog rješenja su sljedeće: računalo, DBMS i SQL Server Management Studio za izradu baze podataka, Visual Studio za izradu programskog koda, git i GitHub za verzioniranje programskog koda, GitHub Wiki za pisanje tehničke i projektne dokumentacije, GitHub projects za planiranje i praćenje projektnih zadataka. Projekt se razvijao i dalje će se razvijati koristeći .Net Framework razvojni okvir te vrstu projekta u WinForms obliku.
 
 ## Projektni tim
 
