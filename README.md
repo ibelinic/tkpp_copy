@@ -21,7 +21,7 @@ Iva Plavšić | iplavsic20@student.foi.hr | 0016146806 | iplavsic20
 
 Dokumentom se želi postići jasna i detaljna specifikacija korisnikovih zahtjeva na temelju kojih bi se implementirala sama desktop aplikacija. Desktop aplikativno rješenje trebalo bi moći ostvariti sve zahtjeve korisnika te osigurati potrebu za korištenjem istog, odnosno potrebu za digitaliziranim načinom upotrebe dosadašnjeg ručnog praćenja zdravstvenih obaveza ljubimca te radnih aktivnosti veterinara u obliku dokumentiranih prikaza. Ovim projektom digitalizirao bi se cjelokupni način praćenja zdravstvenog života ljubimca putem vlasnika i veterinara uz pomoć desktop aplikacije koja bi sadržavala bitne i potrebne podatke, ali i aktivnosti. Arhitektura programskog proizvoda Desktop aplikacije PetVet višeslojna je s odvojenom, odnosno dislociranom bazom podataka. Osnovu spomenute arhitekture predstavlja sustav koji nudi gotova rješenja i funkcionalnosti kako bi se ubrzao proces razvoja aplikacije.
 
-# Funkcionalnosti sustava:
+### Funkcionalnosti sustava:
 Oznaka | Naziv | Kratki opis | Odgovorni član tima
 ------ | ----- | ----------- | -------------------
 F01 | Registracija/prijava uz mogućnost odjave korisnika | Korisnik se treba registrirati ili prijaviti u aplikaciju kako bi imao pristup svim funkcionalnostima iste, također se može i odjaviti te prilikom prijave ima mogućnost promjene lozinke ukoliko je zaboravljena. | Lucija Grzelj
@@ -34,11 +34,11 @@ F07 | Izrada izvještaja digitalnog kartona | Korisnik u obje uloge ima mogućno
 F08 | Evidentiranje određenih tretmana kartona ljubimca | Korisnik u ulozi veterinara ima mogućnost popunjavanja digitalnog kartona o ljubimcima. | Ivana Belinić
 F09 | Pretraživanje korisnika i njihovih ljubimaca | Korisnik u ulozi vlasnika ima mogućnost pretraživanja ostalih korisnika i njihovih ljubimaca. | Iva Plavšić
 
-# Funkcionalni zahtjevi
+### Funkcionalni zahtjevi
 Identifikator | Zahtjev | Obrazloženje | Način provjere | Prioritet [1-5] | Izvor/Porijeklo
 ------------- | ------- | ------------ | -------------- | --------------- | ---------------
 
-# Nefunkcionalni zahtjevi:
+### Nefunkcionalni zahtjevi:
 Oznaka | Naziv | Kratki opis | Odgovorni član tima
 ------ | ----- | ----------- | -------------------
 NFZ01 | Izgled softvera | Sustav će interakciju sa zaposlenicima provoditi preko grafičkog sučelja. | Lucija Grzelj
