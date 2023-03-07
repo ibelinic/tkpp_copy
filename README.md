@@ -13,11 +13,10 @@ Sav programski kod i testove je potrebno verzionirati u glavnoj **master** grani
 
 Povratnu informaciju na samu prijavu tima i projekta, kao i na završnu predaju ćete od nastavnika dobiti kroz sekciju Discussions (također dostupnu na GitHubu vašeg projekta). A sada, vrijeme je da prijavite vaš projekt. Za prijavu vašeg projektnog prijedloga molimo vas koristite **predložak** koji je naveden u nastavku, a započnite tako da kliknete na *olovku* u desnom gornjem kutu ovoga dokumenta :) 
 
-# Naziv projekta
-(u redak iznad navedite kratki proizvoljni naziv projekta prikladan akademskoj zajednici, a ovaj tekst obrišite)
+# PetVet
 
 ## Model rada na projektu
-(Ovdje navedite model rada na projektu, pri čemu su dostupne opcije: (1) Nastavak rada na projektu iz kolegija "Naziv kolegija", (2) Rad na projektu u suradnji s nastavnicima, (3) Rad na projektu u suradnji s industrijom.
+(1) Nastavak rada na projektu iz kolegija "Razvoj programskih proizvoda"
 
 ## Opis projekta
 (Ovdje ukratko opišite projekt na kojem radite, uključujući temu i domenu projekta, kolegij na kojem ste inicijalno započeli projekt, te inicijalne tehnologije koje ste koristili za prethodnu izradu projekta.)
@@ -26,17 +25,28 @@ Povratnu informaciju na samu prijavu tima i projekta, kao i na završnu predaju 
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
-Ime i prezime | mojaadresa@foi.hr | 000000000 | githubuser
-Ime i prezime | ... | ... | ...
+Lucija Grzelj | lgrzelj@student.foi.hr | 0016145583 | lgrzelj
+Ivana Belinić | ibelinic20@student.foi.hr | 0016147210 | ibelinic
+Iva Plavšić | iplavsic20@student.foi.hr | 0016146806 | iplavsic20
 
 ## Specifikacija projekta
 Ovdje navedite funkcionalne i nefunkcionalne zahtjeve koje je vaš projekt do sada obuhvaćao:
 
 Oznaka | Naziv | Kratki opis | Odgovorni član tima
 ------ | ----- | ----------- | -------------------
-F01 | Login | Sustav omogućava prijavu korisnika ... | Ivan Horvat
-F02 | Registracija | Sustav omogućava registraciju novog korisnika... | Pero Perić
-...
+
+Oznaka | Naziv | Kratki opis | Odgovorni član tima
+------ | ----- | ----------- | -------------------
+F01 | Registracija/prijava uz mogućnost odjave korisnika | Korisnik se treba registrirati ili prijaviti u aplikaciju kako bi imao pristup svim funkcionalnostima iste, također se može i odjaviti te prilikom prijave ima mogućnost promjene lozinke ukoliko je zaboravljena. | Lucija Grzelj
+F02 | Izrada/brisanje profila | Korisnik ima mogućnost izrade profila vlastitim ljubimcima te ima i mogućnost brisanja istih. | Ivana Belinić
+F03 | Digitalni karton | Korisnik u ulozi veterinara ima mogućnost otvaranja novog digitalnog kartona ljubimca. | Iva Plavšić
+F04 | Popunjavanje rasporeda unutar kalendara |  Korisnik u ulozi veterinara ima mogućnost popunjavanja kaledara vlastitim aktivnostima prema rasporedu. | Lucija Grzelj
+F05 | Pregled dostupnih veterinara unutar kalendara | Korisnik u ulozi vlasnika ima mogućnost pregleda slobodnih termina s obzirom na raspored veterinara. | Ivana Belinić
+F06 | Prijava/odjava odabranog termina | Korisnik u ulozi vlasnika ima mogućnost odabira jednog od slobodnih termina unutar prikazanog kalendara te odjavu istog. | Iva Plavšić
+F07 | Izrada izvještaja digitalnog kartona | Korisnik u obje uloge ima mogućnost izrade izvještaja digitalnog kartona ljubimaca. | Lucija Grzelj
+F08 | Evidentiranje određenih tretmana kartona ljubimca | Korisnik u ulozi veterinara ima mogućnost popunjavanja digitalnog kartona o ljubimcima. | Ivana Belinić
+F09 | Pretraživanje korisnika i njihovih ljubimaca | Korisnik u ulozi vlasnika ima mogućnost pretraživanja ostalih korisnika i njihovih ljubimaca. | Iva Plavšić
+
 
 ## Tehnologije i oprema
 Ovdje opišite tehnologije i alate koje koje ćete koristit u realizaciji projekta na kolegiju Testiranje i kvaliteta programskih proizvoda. Naravno, ovu sekciju možete naknadno i ažurirati. 
