@@ -1,0 +1,6 @@
+E:\Projekt PetVet-testiranje\Software\PetVet\EntitiesLayer\bin\Debug\EntitiesLayer.dll
+E:\Projekt PetVet-testiranje\Software\PetVet\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
+E:\Projekt PetVet-testiranje\Software\PetVet\EntitiesLayer\obj\Debug\EntitiesLayer.csproj.AssemblyReference.cache
+E:\Projekt PetVet-testiranje\Software\PetVet\EntitiesLayer\obj\Debug\EntitiesLayer.csproj.CoreCompileInputs.cache
+E:\Projekt PetVet-testiranje\Software\PetVet\EntitiesLayer\obj\Debug\EntitiesLayer.dll
+E:\Projekt PetVet-testiranje\Software\PetVet\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
