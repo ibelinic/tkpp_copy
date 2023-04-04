@@ -1,0 +1,14 @@
+E:\Projekt PetVet-testiranje\Software\PetVet\BusinessLayer\bin\Debug\BusinessLayer.dll
+E:\Projekt PetVet-testiranje\Software\PetVet\BusinessLayer\bin\Debug\BusinessLayer.pdb
+E:\Projekt PetVet-testiranje\Software\PetVet\BusinessLayer\bin\Debug\DataAccessLayer.dll
+E:\Projekt PetVet-testiranje\Software\PetVet\BusinessLayer\bin\Debug\EntitiesLayer.dll
+E:\Projekt PetVet-testiranje\Software\PetVet\BusinessLayer\bin\Debug\EntityFramework.dll
+E:\Projekt PetVet-testiranje\Software\PetVet\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+E:\Projekt PetVet-testiranje\Software\PetVet\BusinessLayer\bin\Debug\DataAccessLayer.dll.config
+E:\Projekt PetVet-testiranje\Software\PetVet\BusinessLayer\bin\Debug\EntitiesLayer.pdb
+E:\Projekt PetVet-testiranje\Software\PetVet\BusinessLayer\bin\Debug\EntityFramework.xml
+E:\Projekt PetVet-testiranje\Software\PetVet\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+E:\Projekt PetVet-testiranje\Software\PetVet\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+E:\Projekt PetVet-testiranje\Software\PetVet\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+E:\Projekt PetVet-testiranje\Software\PetVet\BusinessLayer\obj\Debug\BusinessLayer.dll
+E:\Projekt PetVet-testiranje\Software\PetVet\BusinessLayer\obj\Debug\BusinessLayer.pdb
