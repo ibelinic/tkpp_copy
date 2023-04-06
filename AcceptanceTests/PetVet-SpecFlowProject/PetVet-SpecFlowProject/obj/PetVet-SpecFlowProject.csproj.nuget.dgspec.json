@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\AcceptanceTests\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject.csproj": {}
+    "E:\\tttt\\AcceptanceTests\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject.csproj": {}
   },
   "projects": {
-    "E:\\AcceptanceTests\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject.csproj": {
+    "E:\\tttt\\AcceptanceTests\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\AcceptanceTests\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject.csproj",
+        "projectUniqueName": "E:\\tttt\\AcceptanceTests\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject.csproj",
         "projectName": "PetVet-SpecFlowProject",
-        "projectPath": "E:\\AcceptanceTests\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject.csproj",
+        "projectPath": "E:\\tttt\\AcceptanceTests\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "E:\\AcceptanceTests\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject\\obj\\",
+        "outputPath": "E:\\tttt\\AcceptanceTests\\PetVet-SpecFlowProject\\PetVet-SpecFlowProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
