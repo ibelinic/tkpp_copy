@@ -1,0 +1,99 @@
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a pet owner with username "stjepan" and password "stjepan"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a pet owner with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAPetOwnerWithUsernameAndPassword(string stjepan0, string stjepan1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "View available veterinarians" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+When the user does not select a veterinarian from the dropdown menu
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user does not select a veterinarian from the dropdown menu")]
+        public void WhenTheUserDoesNotSelectAVeterinarianFromTheDropdownMenu()
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the system should not display any feedback to the user
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the system should not display any feedback to the user")]
+        public void ThenTheSystemShouldNotDisplayAnyFeedbackToTheUser()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user should only see an empty table of data
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user should only see an empty table of data")]
+        public void ThenTheUserShouldOnlySeeAnEmptyTableOfData()
+        {
+            _scenarioContext.Pending();
+        }
+
+
+
+TestContext Messages:
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a pet owner with username "stjepan" and password "stjepan"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a pet owner with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAPetOwnerWithUsernameAndPassword(string stjepan0, string stjepan1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "View available veterinarians" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+When the user does not select a veterinarian from the dropdown menu
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user does not select a veterinarian from the dropdown menu")]
+        public void WhenTheUserDoesNotSelectAVeterinarianFromTheDropdownMenu()
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the system should not display any feedback to the user
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the system should not display any feedback to the user")]
+        public void ThenTheSystemShouldNotDisplayAnyFeedbackToTheUser()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user should only see an empty table of data
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user should only see an empty table of data")]
+        public void ThenTheUserShouldOnlySeeAnEmptyTableOfData()
+        {
+            _scenarioContext.Pending();
+        }
+

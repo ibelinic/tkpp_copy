@@ -1,0 +1,163 @@
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a pet owner with username "stjepan" and password "stjepan"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a pet owner with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAPetOwnerWithUsernameAndPassword(string stjepan0, string stjepan1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "Profile" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string profile0)
+        {
+            _scenarioContext.Pending();
+        }
+
+When the user selects the pet "Petrica Stjepanovic" from the dropdown list
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user selects the pet ""(.*)"" from the dropdown list")]
+        public void WhenTheUserSelectsThePetFromTheDropdownList(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user clicks on the "Delete profile" button
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user clicks on the ""(.*)"" button")]
+        public void WhenTheUserClicksOnTheButton(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the system displays a confirmation message saying "Are you sure you want to delete this pet profile?"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the system displays a confirmation message saying ""(.*)""")]
+        public void ThenTheSystemDisplaysAConfirmationMessageSaying(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user clicks on the "Confirm" button in the confirmation message
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user clicks on the ""(.*)"" button in the confirmation message")]
+        public void ThenTheUserClicksOnTheButtonInTheConfirmationMessage(string confirm)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the system displays a success message saying "The selected pet profile has been deleted"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the system displays a success message saying ""(.*)""")]
+        public void ThenTheSystemDisplaysASuccessMessageSaying(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the system redirects the user to the Profile page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the system redirects the user to the Profile page")]
+        public void ThenTheSystemRedirectsTheUserToTheProfilePage()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the deleted pet profile is no longer available in the dropdown list
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the deleted pet profile is no longer available in the dropdown list")]
+        public void ThenTheDeletedPetProfileIsNoLongerAvailableInTheDropdownList()
+        {
+            _scenarioContext.Pending();
+        }
+
+
+
+TestContext Messages:
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a pet owner with username "stjepan" and password "stjepan"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a pet owner with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAPetOwnerWithUsernameAndPassword(string stjepan0, string stjepan1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "Profile" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string profile0)
+        {
+            _scenarioContext.Pending();
+        }
+
+When the user selects the pet "Petrica Stjepanovic" from the dropdown list
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user selects the pet ""(.*)"" from the dropdown list")]
+        public void WhenTheUserSelectsThePetFromTheDropdownList(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user clicks on the "Delete profile" button
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user clicks on the ""(.*)"" button")]
+        public void WhenTheUserClicksOnTheButton(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the system displays a confirmation message saying "Are you sure you want to delete this pet profile?"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the system displays a confirmation message saying ""(.*)""")]
+        public void ThenTheSystemDisplaysAConfirmationMessageSaying(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user clicks on the "Confirm" button in the confirmation message
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user clicks on the ""(.*)"" button in the confirmation message")]
+        public void ThenTheUserClicksOnTheButtonInTheConfirmationMessage(string confirm)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the system displays a success message saying "The selected pet profile has been deleted"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the system displays a success message saying ""(.*)""")]
+        public void ThenTheSystemDisplaysASuccessMessageSaying(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the system redirects the user to the Profile page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the system redirects the user to the Profile page")]
+        public void ThenTheSystemRedirectsTheUserToTheProfilePage()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the deleted pet profile is no longer available in the dropdown list
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the deleted pet profile is no longer available in the dropdown list")]
+        public void ThenTheDeletedPetProfileIsNoLongerAvailableInTheDropdownList()
+        {
+            _scenarioContext.Pending();
+        }
+

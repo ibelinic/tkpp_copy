@@ -1,0 +1,153 @@
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a pet owner with username "stjepan" and password "stjepan"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a pet owner with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAPetOwnerWithUsernameAndPassword(string stjepan0, string stjepan1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "Profile" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string profile0)
+        {
+            _scenarioContext.Pending();
+        }
+
+When the user selects the pet "Mara Stjepanovic" from the dropdown menu
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user selects the pet ""(.*)"" from the dropdown menu")]
+        public void WhenTheUserSelectsThePetFromTheDropdownMenu(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user updates certain enabled fields with the following information:
+  --- table step argument ---
+  | Ime  | Prezime     | Tezina_Kg | Visina_Cm |
+  | Maza | Stjepanovic | 5         | 10        |
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user updates certain enabled fields with the following information:")]
+        public void WhenTheUserUpdatesCertainEnabledFieldsWithTheFollowingInformation(Table table)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user clicks the "Update profile" button
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user clicks the ""(.*)"" button")]
+        public void WhenTheUserClicksTheButton(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the pet information is successfully updated and displayed on the form
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the pet information is successfully updated and displayed on the form")]
+        public void ThenThePetInformationIsSuccessfullyUpdatedAndDisplayedOnTheForm()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the updated pet is automatically visible in the dropdown menu
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the updated pet is automatically visible in the dropdown menu")]
+        public void ThenTheUpdatedPetIsAutomaticallyVisibleInTheDropdownMenu()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user receives a success message stating that the pet information was updated successfully
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user receives a success message stating that the pet information was updated successfully")]
+        public void ThenTheUserReceivesASuccessMessageStatingThatThePetInformationWasUpdatedSuccessfully()
+        {
+            _scenarioContext.Pending();
+        }
+
+
+
+TestContext Messages:
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a pet owner with username "stjepan" and password "stjepan"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a pet owner with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAPetOwnerWithUsernameAndPassword(string stjepan0, string stjepan1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "Profile" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string profile0)
+        {
+            _scenarioContext.Pending();
+        }
+
+When the user selects the pet "Mara Stjepanovic" from the dropdown menu
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user selects the pet ""(.*)"" from the dropdown menu")]
+        public void WhenTheUserSelectsThePetFromTheDropdownMenu(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user updates certain enabled fields with the following information:
+  --- table step argument ---
+  | Ime  | Prezime     | Tezina_Kg | Visina_Cm |
+  | Maza | Stjepanovic | 5         | 10        |
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user updates certain enabled fields with the following information:")]
+        public void WhenTheUserUpdatesCertainEnabledFieldsWithTheFollowingInformation(Table table)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user clicks the "Update profile" button
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user clicks the ""(.*)"" button")]
+        public void WhenTheUserClicksTheButton(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the pet information is successfully updated and displayed on the form
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the pet information is successfully updated and displayed on the form")]
+        public void ThenThePetInformationIsSuccessfullyUpdatedAndDisplayedOnTheForm()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the updated pet is automatically visible in the dropdown menu
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the updated pet is automatically visible in the dropdown menu")]
+        public void ThenTheUpdatedPetIsAutomaticallyVisibleInTheDropdownMenu()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user receives a success message stating that the pet information was updated successfully
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user receives a success message stating that the pet information was updated successfully")]
+        public void ThenTheUserReceivesASuccessMessageStatingThatThePetInformationWasUpdatedSuccessfully()
+        {
+            _scenarioContext.Pending();
+        }
+

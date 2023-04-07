@@ -1,0 +1,103 @@
+-> Loading plugin C:\Users\belin\source\repos\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\LivingDoc.SpecFlowPlugin.dll
+-> Loading plugin C:\Users\belin\source\repos\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll
+-> Loading plugin C:\Users\belin\source\repos\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\AcceptanceTests.dll
+-> Using default config
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a pet owner with username "stjepan" and password "stjepan"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a pet owner with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAPetOwnerWithUsernameAndPassword(string stjepan, string stjepan1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "View available veterinarians" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+When the user selects "Franka Frankic" from the dropdown list
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user selects ""(.*)"" from the dropdown list")]
+        public void WhenTheUserSelectsFromTheDropdownList(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user wants to go back to the home screen
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user wants to go back to the home screen")]
+        public void WhenTheUserWantsToGoBackToTheHomeScreen()
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the user should be able to click the back button and return to the home screen
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user should be able to click the back button and return to the home screen")]
+        public void ThenTheUserShouldBeAbleToClickTheBackButtonAndReturnToTheHomeScreen()
+        {
+            _scenarioContext.Pending();
+        }
+
+
+
+TestContext Messages:
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a pet owner with username "stjepan" and password "stjepan"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a pet owner with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAPetOwnerWithUsernameAndPassword(string stjepan, string stjepan1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "View available veterinarians" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+When the user selects "Franka Frankic" from the dropdown list
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user selects ""(.*)"" from the dropdown list")]
+        public void WhenTheUserSelectsFromTheDropdownList(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user wants to go back to the home screen
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user wants to go back to the home screen")]
+        public void WhenTheUserWantsToGoBackToTheHomeScreen()
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the user should be able to click the back button and return to the home screen
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user should be able to click the back button and return to the home screen")]
+        public void ThenTheUserShouldBeAbleToClickTheBackButtonAndReturnToTheHomeScreen()
+        {
+            _scenarioContext.Pending();
+        }
+

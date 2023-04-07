@@ -1,0 +1,99 @@
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a pet owner with username "stjepan" and password "stjepan"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a pet owner with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAPetOwnerWithUsernameAndPassword(string stjepan0, string stjepan1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "View available veterinarians" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+When the user selects "Klara Klaric" from the "Vet Selection" dropdown
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user selects ""(.*)"" from the ""(.*)"" dropdown")]
+        public void WhenTheUserSelectsFromTheDropdown(string p0, string p1)
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the user should see a list of appointments for "Klara Klaric" with the following columns: ID, Date, Start, End
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user should see a list of appointments for ""(.*)"" with the following columns: ID, Date, Start, End")]
+        public void ThenTheUserShouldSeeAListOfAppointmentsForWithTheFollowingColumnsIDDateStartEnd(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the list should only include appointments for today or later
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the list should only include appointments for today or later")]
+        public void ThenTheListShouldOnlyIncludeAppointmentsForTodayOrLater()
+        {
+            _scenarioContext.Pending();
+        }
+
+
+
+TestContext Messages:
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a pet owner with username "stjepan" and password "stjepan"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a pet owner with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAPetOwnerWithUsernameAndPassword(string stjepan0, string stjepan1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "View available veterinarians" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+When the user selects "Klara Klaric" from the "Vet Selection" dropdown
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user selects ""(.*)"" from the ""(.*)"" dropdown")]
+        public void WhenTheUserSelectsFromTheDropdown(string p0, string p1)
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the user should see a list of appointments for "Klara Klaric" with the following columns: ID, Date, Start, End
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user should see a list of appointments for ""(.*)"" with the following columns: ID, Date, Start, End")]
+        public void ThenTheUserShouldSeeAListOfAppointmentsForWithTheFollowingColumnsIDDateStartEnd(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the list should only include appointments for today or later
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the list should only include appointments for today or later")]
+        public void ThenTheListShouldOnlyIncludeAppointmentsForTodayOrLater()
+        {
+            _scenarioContext.Pending();
+        }
+

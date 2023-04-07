@@ -1,0 +1,147 @@
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a veterinarian with username "veterinar" and password "veterinar"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a veterinarian with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAVeterinarianWithUsernameAndPassword(string veterinar0, string veterinar1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "Record" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string record0)
+        {
+            _scenarioContext.Pending();
+        }
+
+When the user selects the desired pet from the dropdown list: "Ratko Stjepanovic"
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user selects the desired pet from the dropdown list: ""(.*)""")]
+        public void WhenTheUserSelectsTheDesiredPetFromTheDropdownList(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user selects an existing date by mistake
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user selects an existing date by mistake")]
+        public void WhenTheUserSelectsAnExistingDateByMistake()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user clicks on "Cancel Selection" button
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user clicks on ""(.*)"" button")]
+        public void WhenTheUserClicksOnButton(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the system should automatically clear the previous data and the selected date
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the system should automatically clear the previous data and the selected date")]
+        public void ThenTheSystemShouldAutomaticallyClearThePreviousDataAndTheSelectedDate()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user should be returned to the initial state of the form
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user should be returned to the initial state of the form")]
+        public void ThenTheUserShouldBeReturnedToTheInitialStateOfTheForm()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the selection should be successfully cancelled
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the selection should be successfully cancelled")]
+        public void ThenTheSelectionShouldBeSuccessfullyCancelled()
+        {
+            _scenarioContext.Pending();
+        }
+
+
+
+TestContext Messages:
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a veterinarian with username "veterinar" and password "veterinar"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a veterinarian with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAVeterinarianWithUsernameAndPassword(string veterinar0, string veterinar1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "Record" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string record0)
+        {
+            _scenarioContext.Pending();
+        }
+
+When the user selects the desired pet from the dropdown list: "Ratko Stjepanovic"
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user selects the desired pet from the dropdown list: ""(.*)""")]
+        public void WhenTheUserSelectsTheDesiredPetFromTheDropdownList(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user selects an existing date by mistake
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user selects an existing date by mistake")]
+        public void WhenTheUserSelectsAnExistingDateByMistake()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user clicks on "Cancel Selection" button
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user clicks on ""(.*)"" button")]
+        public void WhenTheUserClicksOnButton(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the system should automatically clear the previous data and the selected date
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the system should automatically clear the previous data and the selected date")]
+        public void ThenTheSystemShouldAutomaticallyClearThePreviousDataAndTheSelectedDate()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user should be returned to the initial state of the form
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user should be returned to the initial state of the form")]
+        public void ThenTheUserShouldBeReturnedToTheInitialStateOfTheForm()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the selection should be successfully cancelled
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the selection should be successfully cancelled")]
+        public void ThenTheSelectionShouldBeSuccessfullyCancelled()
+        {
+            _scenarioContext.Pending();
+        }
+

@@ -1,0 +1,99 @@
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a veterinarian with username "veterinar" and password "veterinar"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a veterinarian with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAVeterinarianWithUsernameAndPassword(string veterinar0, string veterinar1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "Record" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string record0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user doesn't select a pet from the dropdown
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user doesn't select a pet from the dropdown")]
+        public void GivenTheUserDoesntSelectAPetFromTheDropdown()
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the form's functionalities should be disabled
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the form's functionalities should be disabled")]
+        public void ThenTheFormsFunctionalitiesShouldBeDisabled()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user should be informed to select a pet before proceeding
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user should be informed to select a pet before proceeding")]
+        public void ThenTheUserShouldBeInformedToSelectAPetBeforeProceeding()
+        {
+            _scenarioContext.Pending();
+        }
+
+
+
+TestContext Messages:
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a veterinarian with username "veterinar" and password "veterinar"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a veterinarian with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAVeterinarianWithUsernameAndPassword(string veterinar0, string veterinar1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "Record" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string record0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user doesn't select a pet from the dropdown
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user doesn't select a pet from the dropdown")]
+        public void GivenTheUserDoesntSelectAPetFromTheDropdown()
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the form's functionalities should be disabled
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the form's functionalities should be disabled")]
+        public void ThenTheFormsFunctionalitiesShouldBeDisabled()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user should be informed to select a pet before proceeding
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user should be informed to select a pet before proceeding")]
+        public void ThenTheUserShouldBeInformedToSelectAPetBeforeProceeding()
+        {
+            _scenarioContext.Pending();
+        }
+

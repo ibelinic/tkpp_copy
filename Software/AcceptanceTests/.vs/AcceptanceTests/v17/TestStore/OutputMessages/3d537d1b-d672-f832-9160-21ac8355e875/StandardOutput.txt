@@ -1,0 +1,115 @@
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a pet owner with username "stjepan" and password "stjepan"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a pet owner with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAPetOwnerWithUsernameAndPassword(string stjepan0, string stjepan1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "Profile" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string profile)
+        {
+            _scenarioContext.Pending();
+        }
+
+When the user selects the pet "Mara Stjepanovic" from the dropdown list
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user selects the pet ""(.*)"" from the dropdown list")]
+        public void WhenTheUserSelectsThePetFromTheDropdownList(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user clicks on the "Delete profile" button
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user clicks on the ""(.*)"" button")]
+        public void WhenTheUserClicksOnTheButton(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the system displays an error message saying "Cannot delete the selected pet profile as there are health records associated with it"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the system displays an error message saying ""(.*)""")]
+        public void ThenTheSystemDisplaysAnErrorMessageSaying(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the system does not delete the pet profile
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the system does not delete the pet profile")]
+        public void ThenTheSystemDoesNotDeleteThePetProfile()
+        {
+            _scenarioContext.Pending();
+        }
+
+
+
+TestContext Messages:
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a pet owner with username "stjepan" and password "stjepan"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a pet owner with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAPetOwnerWithUsernameAndPassword(string stjepan0, string stjepan1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "Profile" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string profile)
+        {
+            _scenarioContext.Pending();
+        }
+
+When the user selects the pet "Mara Stjepanovic" from the dropdown list
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user selects the pet ""(.*)"" from the dropdown list")]
+        public void WhenTheUserSelectsThePetFromTheDropdownList(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user clicks on the "Delete profile" button
+-> No matching step definition found for the step. Use the following code to create one:
+        [When(@"the user clicks on the ""(.*)"" button")]
+        public void WhenTheUserClicksOnTheButton(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the system displays an error message saying "Cannot delete the selected pet profile as there are health records associated with it"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the system displays an error message saying ""(.*)""")]
+        public void ThenTheSystemDisplaysAnErrorMessageSaying(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the system does not delete the pet profile
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the system does not delete the pet profile")]
+        public void ThenTheSystemDoesNotDeleteThePetProfile()
+        {
+            _scenarioContext.Pending();
+        }
+

@@ -1,0 +1,179 @@
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a veterinarian with username "veterinar" and password "veterinar"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a veterinarian with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAVeterinarianWithUsernameAndPassword(string veterinar0, string veterinar1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "Record" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string record0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user selects the desired pet from the dropdown menu: "Ratko Stjepanovic"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user selects the desired pet from the dropdown menu: ""(.*)""")]
+        public void GivenTheUserSelectsTheDesiredPetFromTheDropdownMenu(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user selects the date "6.4.2023" while filling in the visit reason with desired, but valid data
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user selects the date ""(.*)"" while filling in the visit reason with desired, but valid data")]
+        public void GivenTheUserSelectsTheDateWhileFillingInTheVisitReasonWithDesiredButValidData(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user clicks on the "Save visit" checkbox
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user clicks on the ""(.*)"" checkbox")]
+        public void GivenTheUserClicksOnTheCheckbox(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the visit is saved and the fields for diseases and medications are enabled
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the visit is saved and the fields for diseases and medications are enabled")]
+        public void ThenTheVisitIsSavedAndTheFieldsForDiseasesAndMedicationsAreEnabled()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user fills in the fields for disease and medication with valid data
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user fills in the fields for disease and medication with valid data")]
+        public void ThenTheUserFillsInTheFieldsForDiseaseAndMedicationWithValidData()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user selects the symptom onset date as "12.4.2023"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user selects the symptom onset date as ""(.*)""")]
+        public void ThenTheUserSelectsTheSymptomOnsetDateAs(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user clicks on "Record new visit" button
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user clicks on ""(.*)"" button")]
+        public void ThenTheUserClicksOnButton(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the system should display an error message saying that the symptom onset date must be earlier than the visit date
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the system should display an error message saying that the symptom onset date must be earlier than the visit date")]
+        public void ThenTheSystemShouldDisplayAnErrorMessageSayingThatTheSymptomOnsetDateMustBeEarlierThanTheVisitDate()
+        {
+            _scenarioContext.Pending();
+        }
+
+
+
+TestContext Messages:
+Given the user has launched the system
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has launched the system")]
+        public void GivenTheUserHasLaunchedTheSystem()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user has logged in successfully as a veterinarian with username "veterinar" and password "veterinar"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user has logged in successfully as a veterinarian with username ""(.*)"" and password ""(.*)""")]
+        public void GivenTheUserHasLoggedInSuccessfullyAsAVeterinarianWithUsernameAndPassword(string veterinar0, string veterinar1)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user is on the "Record" page
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user is on the ""(.*)"" page")]
+        public void GivenTheUserIsOnThePage(string record0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user selects the desired pet from the dropdown menu: "Ratko Stjepanovic"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user selects the desired pet from the dropdown menu: ""(.*)""")]
+        public void GivenTheUserSelectsTheDesiredPetFromTheDropdownMenu(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user selects the date "6.4.2023" while filling in the visit reason with desired, but valid data
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user selects the date ""(.*)"" while filling in the visit reason with desired, but valid data")]
+        public void GivenTheUserSelectsTheDateWhileFillingInTheVisitReasonWithDesiredButValidData(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user clicks on the "Save visit" checkbox
+-> No matching step definition found for the step. Use the following code to create one:
+        [Given(@"the user clicks on the ""(.*)"" checkbox")]
+        public void GivenTheUserClicksOnTheCheckbox(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the visit is saved and the fields for diseases and medications are enabled
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the visit is saved and the fields for diseases and medications are enabled")]
+        public void ThenTheVisitIsSavedAndTheFieldsForDiseasesAndMedicationsAreEnabled()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user fills in the fields for disease and medication with valid data
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user fills in the fields for disease and medication with valid data")]
+        public void ThenTheUserFillsInTheFieldsForDiseaseAndMedicationWithValidData()
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user selects the symptom onset date as "12.4.2023"
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user selects the symptom onset date as ""(.*)""")]
+        public void ThenTheUserSelectsTheSymptomOnsetDateAs(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+And the user clicks on "Record new visit" button
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the user clicks on ""(.*)"" button")]
+        public void ThenTheUserClicksOnButton(string p0)
+        {
+            _scenarioContext.Pending();
+        }
+
+Then the system should display an error message saying that the symptom onset date must be earlier than the visit date
+-> No matching step definition found for the step. Use the following code to create one:
+        [Then(@"the system should display an error message saying that the symptom onset date must be earlier than the visit date")]
+        public void ThenTheSystemShouldDisplayAnErrorMessageSayingThatTheSymptomOnsetDateMustBeEarlierThanTheVisitDate()
+        {
+            _scenarioContext.Pending();
+        }
+
