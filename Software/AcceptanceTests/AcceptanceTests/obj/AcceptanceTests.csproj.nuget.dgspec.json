@@ -40,6 +40,10 @@
         "net48": {
           "targetAlias": "net48",
           "dependencies": {
+            "Appium.WebDriver": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
             "FluentAssertions": {
               "target": "Package",
               "version": "[6.2.0, )"
