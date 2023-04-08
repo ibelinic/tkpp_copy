@@ -1,3 +1,7 @@
+using AcceptanceTests.Support;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium;
 using System;
 using TechTalk.SpecFlow;
 
@@ -6,58 +10,107 @@ namespace AcceptanceTests.StepDefinitions
     [Binding]
     public class UserLoginStepDefinitions
     {
-        [When(@"User clicks on ""([^""]*)""")]
-        public void WhenUserClicksOn(string prijava)
-        {
-            throw new PendingStepException();
-        }
+    
 
         [Then(@"User is on login form")]
         public void ThenUserIsOnLoginForm()
         {
-            throw new PendingStepException();
+            var loginDriver = GuiDriver.GetDriver();
+            Console.WriteLine($"Number of open windows: {loginDriver.WindowHandles.Count}");
+            foreach (var handle in loginDriver.WindowHandles)
+            {
+                loginDriver.SwitchTo().Window(handle);
+                Console.WriteLine($"Handle: {handle}, Title: {loginDriver.Title}");
+            }
+
+            var isCorrectTitle = loginDriver.Title == "FrmPrijava";
+            Assert.IsTrue(isCorrectTitle, "Naziv prozora nije ispravan");
+            var registrationFormButton = loginDriver.FindElementByAccessibilityId("txtKorisnickoIme");
+            Assert.IsTrue(registrationFormButton.Displayed, "Gumb za registraciju nije prikazan");
         }
 
-        [Given(@"User needs to enter following details of owner:")]
-        public void GivenUserNeedsToEnterFollowingDetailsOfOwner(Table table)
-        {
-            throw new PendingStepException();
+      
+
+        [When(@"User clicks on button prijava")]
+        public void WhenUserClicksOnButtonPrijava()
+        {//gumb kod forme za pocetnu formu
+            GuiDriver.GetOrCreateDriver();
+            var driver = GuiDriver.GetDriver();
+            var formPocetna = driver.FindElementByAccessibilityId("FrmPocetna");
+            var buttonPrijava = formPocetna.FindElementByAccessibilityId("btnPrijava");
+            buttonPrijava.Click();
         }
 
-        [When(@"User clicks on button ""([^""]*)""")]
-        public void WhenUserClicksOnButton(string prijava)
-        {
-            throw new PendingStepException();
+        [Given(@"User login")]
+        public void GivenUserLogin()
+        {//gumb forme za prijavu
+            GuiDriver.GetOrCreateDriver();
+            var driver = GuiDriver.GetDriver();
+            var formPrijava = driver.FindElementByAccessibilityId("FrmPrijava");
+            var buttonPrijava = formPrijava.FindElementByAccessibilityId("btnPrijava");
+            buttonPrijava.Click();
         }
 
         [Then(@"User will be successfully redirected to the initial form for owner")]
         public void ThenUserWillBeSuccessfullyRedirectedToTheInitialFormForOwner()
         {
-            throw new PendingStepException();
+            var driver = GuiDriver.GetOrCreateDriver();
+
+            Console.WriteLine($"Number of open windows: {driver.WindowHandles.Count}");
+            foreach (var handle in driver.WindowHandles)
+            {
+                driver.SwitchTo().Window(handle);
+                Console.WriteLine($"Handle: {handle}, Title: {driver.Title}");
+            }
+
+            var welcomeOwner = driver.FindElementByAccessibilityId("FrmKorisnik");
+            Assert.IsTrue(welcomeOwner.Displayed);
         }
 
-        [Given(@"User needs to enter details for veterinarian:")]
-        public void GivenUserNeedsToEnterDetailsForVeterinarian(Table table)
-        {
-            throw new PendingStepException();
-        }
+     
 
         [Then(@"User will be successfully redirected to the initial form for veterinarian")]
         public void ThenUserWillBeSuccessfullyRedirectedToTheInitialFormForVeterinarian()
         {
-            throw new PendingStepException();
+            var driver = GuiDriver.GetOrCreateDriver();
+
+            Console.WriteLine($"Number of open windows: {driver.WindowHandles.Count}");
+            foreach (var handle in driver.WindowHandles)
+            {
+                driver.SwitchTo().Window(handle);
+                Console.WriteLine($"Handle: {handle}, Title: {driver.Title}");
+            }
+
+            var welcomeOwner = driver.FindElementByAccessibilityId("FrmPocetnaVeterinar");
+            Assert.IsTrue(welcomeOwner.Displayed);
         }
 
-        [Given(@"User needs to entet details:")]
-        public void GivenUserNeedsToEntetDetails(Table table)
-        {
-            throw new PendingStepException();
+        [Given(@"User needs to enter details:")]
+        public void GivenUserNeedsToEnterDetails(Table table)
+        {//unos detalja na formu za prijavu
+            var driverLogin = GuiDriver.GetDriver();
+
+            var formLoginVeterinarian = driverLogin.FindElementByAccessibilityId("FrmPrijava");
+
+            var rows = table.Rows;
+            formLoginVeterinarian.FindElementByAccessibilityId("txtKorisnickoIme").SendKeys(rows[0]["korisnickoIme"]);
+            formLoginVeterinarian.FindElementByAccessibilityId("txtLozinka").SendKeys(rows[0]["lozinka"]);
         }
+
 
         [Then(@"System will display error message ""([^""]*)"" on form")]
         public void ThenSystemWillDisplayErrorMessageOnForm(string p0)
         {
-            throw new PendingStepException();
+            var driver = GuiDriver.GetOrCreateDriver();
+
+            // Prièekaj da se element pojavi na stranici
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            var errorMessageElement = wait.Until(ExpectedConditions.ElementIsVisible(By.Id("label3")));
+
+            // Provjeri da li je element vidljiv i da li sadrži oèekivani tekst
+            Assert.IsTrue(errorMessageElement.Displayed && errorMessageElement.Text == "Lozinka nije ispravna");
+
+
         }
     }
 }

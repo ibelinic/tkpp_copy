@@ -6,26 +6,26 @@ because it will give the user certain priviliges.
 
 Background: 
 	Given User is on welcome form
-	When User clicks on "Prijava"
+	When User clicks on button prijava
 	Then User is on login form
 
 Scenario: Login user in role of owner 
-	Given User needs to enter following details of owner:
+	Given User needs to enter details:
 	| korisnickoIme | lozinka |
-	| anastayija    | anastayja |
-	When User clicks on button "Prijava"
+	| anastayija    | anastayija |
+	And User login
 	Then User will be successfully redirected to the initial form for owner
 
 Scenario: Login user in role of veterinarian 
-	Given User needs to enter details for veterinarian:
+	Given User needs to enter details:
 	| korisnickoIme | lozinka |
 	| franka    | franka |
-	When User clicks on button "Prijava"
+	And User login
 	Then User will be successfully redirected to the initial form for veterinarian
 
 Scenario: Invalid password
-	Given User needs to entet details:
+	Given User needs to enter details:
 	| korisnickoIme | lozinka |
-	| anastazija    | ana     |
-	When User clicks on the button "Prijava"
+	| anastayija    | ana     |
+	And User login
 	Then System will display error message "Lozinka nije ispravna" on form 
