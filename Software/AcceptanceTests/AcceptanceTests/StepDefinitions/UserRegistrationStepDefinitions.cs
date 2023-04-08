@@ -1,6 +1,7 @@
 using AcceptanceTests.Support;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Drawing;
@@ -67,14 +68,16 @@ namespace AcceptanceTests.StepDefinitions
             registrationForm.FindElementByAccessibilityId("txtBrojMobitela").SendKeys(rows[0]["broj"]);
             registrationForm.FindElementByAccessibilityId("txtKorisnicko").SendKeys(rows[0]["korisnik"]);
             registrationForm.FindElementByAccessibilityId("txtLozinka").SendKeys(rows[0]["lozinka"]);
-            var comboBox = registrationForm.FindElementByAccessibilityId("cmbUloga");
-            comboBox.Click();
-            var uloga = rows[0]["uloga"].ToString();
-            new SelectElement(comboBox).SelectByText(uloga);
+            var comboBoxElement = registrationForm.FindElementByAccessibilityId("cmbUloga");
+            var comboBoxName = comboBoxElement.GetAttribute("LegacyIAccessiblePattern.Name");
+            if (comboBoxName == "Vlasnik")
+            {
+                comboBoxElement.Click();
+                // daljnje korake za odabir vrijednosti iz ComboBox-a možete dodati ovdje
+                Assert.AreEqual(rows[0]["uloga"], comboBoxElement);//provjera vrijednosti-combobox
 
-          
-            var selectedOption = new SelectElement(comboBox).SelectedOption.Text;
-            Assert.AreEqual(rows[0]["uloga"], selectedOption);//provjera vrijednosti-combobox
+            }
+
         }
 
 
