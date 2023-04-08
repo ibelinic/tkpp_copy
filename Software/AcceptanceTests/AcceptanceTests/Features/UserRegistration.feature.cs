@@ -100,55 +100,22 @@ namespace AcceptanceTests.Features
    testRunner.Given("User is on welcome form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 8
-   testRunner.When("User clicks button \"Registracija\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+   testRunner.When("User clicks on the button \"Registracija\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 10
-testRunner.Given("User is on the registration form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-            TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
-                        "ime",
-                        "Anastazija"});
-            table3.AddRow(new string[] {
-                        "prezime",
-                        "Stazić"});
-            table3.AddRow(new string[] {
-                        "adresa",
-                        "Kolodvorska 60"});
-            table3.AddRow(new string[] {
-                        "email",
-                        "anastazija.stazic@gmail.com"});
-            table3.AddRow(new string[] {
-                        "broj",
-                        "0911234567"});
-            table3.AddRow(new string[] {
-                        "korisnik",
-                        "anastazija"});
-            table3.AddRow(new string[] {
-                        "lozinka",
-                        "anastazija"});
-            table3.AddRow(new string[] {
-                        "uloga",
-                        "Vlasnik"});
-#line 11
-    testRunner.When("User enters the following details:", ((string)(null)), table3, "When ");
-#line hidden
-#line 20
-    testRunner.And("User clicks the \"Registriraj me\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 21
-    testRunner.Then("User should be successfully redirected to the welcome form of the application.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 9
+   testRunner.Then("User is on the registration form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Invalid e-mail address")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Valid registration")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UserRegistration")]
-        public virtual void InvalidE_MailAddress()
+        public virtual void ValidRegistration()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Invalid e-mail address", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 23
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid registration", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 11
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -171,107 +138,32 @@ this.ScenarioInitialize(scenarioInfo);
 #line 6
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "ime",
-                            "Karlo"});
-                table4.AddRow(new string[] {
                             "prezime",
-                            "Stazić"});
-                table4.AddRow(new string[] {
                             "adresa",
-                            "Karlova ulica"});
-                table4.AddRow(new string[] {
                             "email",
-                            "karlo"});
-                table4.AddRow(new string[] {
                             "broj",
-                            "0911237654"});
-                table4.AddRow(new string[] {
                             "korisnik",
-                            "karlo"});
-                table4.AddRow(new string[] {
                             "lozinka",
-                            "karlo"});
-#line 24
-   testRunner.When("User fills the form with data that follows:", ((string)(null)), table4, "When ");
-#line hidden
-#line 32
-   testRunner.And("User click \"Registriraj me\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 33
-   testRunner.Then("System will display \"Neispravno unesena e-mail adresa\" on form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Invalid Phone Number")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UserRegistration")]
-        public virtual void InvalidPhoneNumber()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Invalid Phone Number", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 36
-  this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 6
-this.FeatureBackground();
-#line hidden
-                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Field",
-                            "Value"});
-                table5.AddRow(new string[] {
-                            "Name",
-                            "Karlo"});
-                table5.AddRow(new string[] {
-                            "Surname",
-                            "Stazić"});
-                table5.AddRow(new string[] {
-                            "Address",
-                            "Karlova ulica"});
-                table5.AddRow(new string[] {
-                            "Email",
-                            "karlo@gmail.com"});
-                table5.AddRow(new string[] {
-                            "Phone number",
-                            "broj"});
-                table5.AddRow(new string[] {
-                            "Username",
-                            "karlo"});
-                table5.AddRow(new string[] {
-                            "Password",
-                            "karlo"});
-                table5.AddRow(new string[] {
-                            "Role",
+                            "uloga"});
+                table3.AddRow(new string[] {
+                            "Anastayija",
+                            "Stayić",
+                            "Kolodvorska 60",
+                            "anastayija.stayic@gmail.com",
+                            "0911234567",
+                            "anastayija",
+                            "anastayija",
                             "Vlasnik"});
-#line 37
-    testRunner.When("user fills in the details as follows:", ((string)(null)), table5, "When ");
+#line 12
+    testRunner.Given("User enters the following details:", ((string)(null)), table3, "Given ");
 #line hidden
-#line 47
-    testRunner.And("clicks the \"Registriraj me\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 15
+    testRunner.And("User clicks button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 48
-    testRunner.Then("system should display an error message in the form of a popup on the screen sayin" +
-                        "g \"Broj telefona mora sadržavati 10 znamenaka.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 16
+    testRunner.Then("User should be successfully redirected to the welcome form of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -285,7 +177,7 @@ this.FeatureBackground();
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Registration cancellation", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 50
+#line 19
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -308,11 +200,11 @@ this.ScenarioInitialize(scenarioInfo);
 #line 6
 this.FeatureBackground();
 #line hidden
-#line 51
-testRunner.When("user clicks on the \"Cancel\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 20
+testRunner.Given("user clicks \"Odustani\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 52
-testRunner.Then("system should display the wlcome form of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 21
+testRunner.Then("User should be successfully redirected to the welcome form of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
