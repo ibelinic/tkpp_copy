@@ -1,7 +1,7 @@
 ﻿Feature: UserRegistration
 
 Application needs to provide registration for user
-because it will have priviligies based on his role.
+because it will give user access to application.
 
 Background:
    Given User is on welcome form
