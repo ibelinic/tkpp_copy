@@ -1,6 +1,6 @@
-﻿Feature: DeleteAppointment
+﻿Feature: SeeAllPastAppointments
 
-User in a role of veterinarian should be able to delete appointment.
+User as a vetereniar should be able to see all his past appointments.
 
 Background: 
 	Given User is on welcome form
@@ -12,8 +12,8 @@ Background:
 	And User login
 	Then User will be successfully redirected to the initial form for veterinarian
 
-Scenario: Deleting appointment from schedule
+Scenario: Viewing all past appointments from schedule
 	Given User clicks button his Schedule
-	When User selects appointment
-	And User selects button for deleting appointment
+	When User selects button for past appointments
+	And User need to select button for going back
 	Then User should be able to view new appointment on the Schedule form

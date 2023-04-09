@@ -8,10 +8,8 @@ namespace AcceptanceTests.StepDefinitions
     [Binding]
     public class DeleteAppointmentStepDefinitions
     {
-        
-
-        [When(@"User selects button fo deleting appointment")]
-        public void WhenUserSelectsButtonFoDeletingAppointment()
+        [When(@"User selects button for deleting appointment")]
+        public void WhenUserSelectsButtonForDeletingAppointment()
         {
             GuiDriver.GetOrCreateDriver();
             var driver = GuiDriver.GetDriver();
@@ -19,5 +17,7 @@ namespace AcceptanceTests.StepDefinitions
             var btnAžuriraj = formRaspored.FindElementByAccessibilityId("btnIzbrisi");
             btnAžuriraj.Click();
         }
+
+
     }
 }
