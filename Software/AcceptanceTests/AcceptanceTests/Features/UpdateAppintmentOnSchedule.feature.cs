@@ -20,7 +20,7 @@ namespace AcceptanceTests.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class UserRegistrationFeature
+    public partial class UpdateAppintmentOnScheduleFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -29,7 +29,7 @@ namespace AcceptanceTests.Features
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "UserRegistration.feature"
+#line 1 "UpdateAppintmentOnSchedule.feature"
 #line hidden
         
         public virtual Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
@@ -48,8 +48,7 @@ namespace AcceptanceTests.Features
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "UserRegistration", "Application needs to provide registration for user\r\nbecause it will give user acc" +
-                    "ess to application.", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "UpdateAppintmentOnSchedule", "User in role of Veterinarian should be able to update any appointment anytime.", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -64,9 +63,9 @@ namespace AcceptanceTests.Features
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "UserRegistration")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "UpdateAppintmentOnSchedule")))
             {
-                global::AcceptanceTests.Features.UserRegistrationFeature.FeatureSetup(null);
+                global::AcceptanceTests.Features.UpdateAppintmentOnScheduleFeature.FeatureSetup(null);
             }
         }
         
@@ -94,28 +93,43 @@ namespace AcceptanceTests.Features
         
         public virtual void FeatureBackground()
         {
+#line 5
+#line hidden
 #line 6
+ testRunner.Given("User is on welcome form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 7
-   testRunner.Given("User is on welcome form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.When("User clicks on button prijava", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 8
-   testRunner.When("User clicks on the button \"Registracija\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Then("User is on login form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
+            TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                        "korisnickoIme",
+                        "lozinka"});
+            table5.AddRow(new string[] {
+                        "franka",
+                        "franka"});
 #line 9
-   testRunner.Then("User is on the registration form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("User needs to enter details:", ((string)(null)), table5, "And ");
+#line hidden
+#line 12
+ testRunner.And("User login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 13
+ testRunner.Then("User will be successfully redirected to the initial form for veterinarian", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Valid registration")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UserRegistration")]
-        public virtual void ValidRegistration()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Appointment date update")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UpdateAppintmentOnSchedule")]
+        public virtual void AppointmentDateUpdate()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid registration", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 11
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Appointment date update", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 15
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -135,49 +149,44 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 6
+#line 5
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
-                            "ime",
-                            "prezime",
-                            "adresa",
-                            "email",
-                            "broj",
-                            "korisnik",
-                            "lozinka",
-                            "uloga"});
-                table12.AddRow(new string[] {
-                            "Anastayija",
-                            "Stayić",
-                            "Kolodvorska 60",
-                            "anastayija.stayic@gmail.com",
-                            "0911234567",
-                            "anastayija",
-                            "anastayija",
-                            "Vlasnik"});
-#line 12
-    testRunner.Given("User enters the following details:", ((string)(null)), table12, "Given ");
-#line hidden
-#line 15
-    testRunner.And("User clicks button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
 #line 16
-    testRunner.Then("User should be successfully redirected to the welcome form of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Given("User clicks button his Schedule", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 17
+ testRunner.When("User selects appointment", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 18
+ testRunner.And("User selects button for update", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                            "datum"});
+                table6.AddRow(new string[] {
+                            "10.4.2023."});
+#line 19
+ testRunner.And("User enter details:", ((string)(null)), table6, "And ");
+#line hidden
+#line 22
+ testRunner.And("User press button \"Update\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 23
+ testRunner.Then("User should be able to view new appointment on the Schedule form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Registration cancellation")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UserRegistration")]
-        public virtual void RegistrationCancellation()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Cancelling update of appointment")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UpdateAppintmentOnSchedule")]
+        public virtual void CancellingUpdateOfAppointment()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Registration cancellation", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 19
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cancelling update of appointment", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 25
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -197,14 +206,23 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 6
+#line 5
 this.FeatureBackground();
 #line hidden
-#line 20
-testRunner.Given("user clicks \"Odustani\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 26
+ testRunner.Given("User clicks button his Schedule", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 21
-testRunner.Then("User should be successfully redirected to the welcome form of the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 27
+ testRunner.When("User selects appointment", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 28
+ testRunner.And("User selects button for update", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 29
+ testRunner.And("User select button for canceling", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 30
+ testRunner.Then("User should be able to view new appointment on the Schedule form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
