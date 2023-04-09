@@ -1,0 +1,77 @@
+-> Loading plugin E:\PetVet-Testiranje\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\LivingDoc.SpecFlowPlugin.dll
+-> Loading plugin E:\PetVet-Testiranje\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll
+-> Loading plugin E:\PetVet-Testiranje\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\AcceptanceTests.dll
+-> Using default config
+Given User is on welcome form
+-> done: UserRegistrationStepDefinitions.GivenUserIsOnWelcomeForm() (0,7s)
+When User clicks on button prijava
+-> done: UserLoginStepDefinitions.WhenUserClicksOnButtonPrijava() (0,3s)
+Then User is on login form
+Number of open windows: 1
+Handle: 0x0005161C, Title: FrmPrijava
+-> done: UserLoginStepDefinitions.ThenUserIsOnLoginForm() (0,8s)
+And User needs to enter details:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | franka        | franka  |
+-> done: ScheduleFillingCalendarStepDefinitions.ThenUserNeedsToEnterDetails(<table>) (1,1s)
+And User login
+-> done: ScheduleFillingCalendarStepDefinitions.ThenUserLogin() (0,3s)
+Then User will be successfully redirected to the initial form for veterinarian
+Number of open windows: 1
+Handle: 0x001310B8, Title: Početna veterinar
+-> done: UserLoginStepDefinitions.ThenUserWillBeSuccessfullyRedirectedToTheInitialFormForVeterinarian() (2,8s)
+Given User clicks button his Schedule
+-> done: ScheduleFillingCalendarStepDefinitions.GivenUserClicksButtonHisSchedule() (0,3s)
+When User select button for adding to the schedule
+Number of open windows: 1
+Handle: 0x001410B8, Title: Raspored
+-> done: ScheduleFillingCalendarStepDefinitions.WhenUserSelectButtonForAddingToTheSchedule() (1,3s)
+And Form for adding schedule is open
+Number of open windows: 1
+Handle: 0x001410B8, Title: Raspored
+-> done: ScheduleFillingCalendarStepDefinitions.WhenFormForAddingScheduleIsOpen() (0,7s)
+And User then fill with the following details:
+  --- table step argument ---
+  | datum      | vrijeme_pocetka | vrijeme_zavrsetka | opis             | ljubimac   |
+  | 14.4.2023. | 12:00           | 13:00             | Pregled ljubimca | Missy Anic |
+-> done: ScheduleFillingCalendarStepDefinitions.WhenUserThenFillWithTheFollowingDetails(<table>) (3,0s)
+And Select button for adding
+-> done: ScheduleFillingCalendarStepDefinitions.WhenSelectButtonForAdding() (0,3s)
+Then User should be able to view new appointment on the Schedule form
+Number of open windows: 1
+Handle: 0x001410B8, Title: Raspored
+-> done: ScheduleFillingCalendarStepDefinitions.ThenUserShouldBeAbleToViewNewAppointmentOnTheScheduleForm() (1,1s)
+
+
+TestContext Messages:
+Given User is on welcome form
+-> done: UserRegistrationStepDefinitions.GivenUserIsOnWelcomeForm() (0,7s)
+When User clicks on button prijava
+-> done: UserLoginStepDefinitions.WhenUserClicksOnButtonPrijava() (0,3s)
+Then User is on login form
+-> done: UserLoginStepDefinitions.ThenUserIsOnLoginForm() (0,8s)
+And User needs to enter details:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | franka        | franka  |
+-> done: ScheduleFillingCalendarStepDefinitions.ThenUserNeedsToEnterDetails(<table>) (1,1s)
+And User login
+-> done: ScheduleFillingCalendarStepDefinitions.ThenUserLogin() (0,3s)
+Then User will be successfully redirected to the initial form for veterinarian
+-> done: UserLoginStepDefinitions.ThenUserWillBeSuccessfullyRedirectedToTheInitialFormForVeterinarian() (2,8s)
+Given User clicks button his Schedule
+-> done: ScheduleFillingCalendarStepDefinitions.GivenUserClicksButtonHisSchedule() (0,3s)
+When User select button for adding to the schedule
+-> done: ScheduleFillingCalendarStepDefinitions.WhenUserSelectButtonForAddingToTheSchedule() (1,3s)
+And Form for adding schedule is open
+-> done: ScheduleFillingCalendarStepDefinitions.WhenFormForAddingScheduleIsOpen() (0,7s)
+And User then fill with the following details:
+  --- table step argument ---
+  | datum      | vrijeme_pocetka | vrijeme_zavrsetka | opis             | ljubimac   |
+  | 14.4.2023. | 12:00           | 13:00             | Pregled ljubimca | Missy Anic |
+-> done: ScheduleFillingCalendarStepDefinitions.WhenUserThenFillWithTheFollowingDetails(<table>) (3,0s)
+And Select button for adding
+-> done: ScheduleFillingCalendarStepDefinitions.WhenSelectButtonForAdding() (0,3s)
+Then User should be able to view new appointment on the Schedule form
+-> done: ScheduleFillingCalendarStepDefinitions.ThenUserShouldBeAbleToViewNewAppointmentOnTheScheduleForm() (1,1s)
