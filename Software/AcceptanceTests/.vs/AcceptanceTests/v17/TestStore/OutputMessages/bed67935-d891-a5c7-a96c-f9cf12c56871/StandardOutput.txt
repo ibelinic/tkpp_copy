@@ -1,0 +1,73 @@
+-> Loading plugin E:\PetVet-Testiranje\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\LivingDoc.SpecFlowPlugin.dll
+-> Loading plugin E:\PetVet-Testiranje\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll
+-> Loading plugin E:\PetVet-Testiranje\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\AcceptanceTests.dll
+-> Using default config
+Given User is on welcome form
+-> done: UserRegistrationStepDefinitions.GivenUserIsOnWelcomeForm() (0,6s)
+When User clicks on button prijava
+-> done: UserLoginStepDefinitions.WhenUserClicksOnButtonPrijava() (0,3s)
+Then User is on login form
+Number of open windows: 1
+Handle: 0x000A0B0A, Title: FrmPrijava
+-> done: UserLoginStepDefinitions.ThenUserIsOnLoginForm() (0,4s)
+And User needs to enter details:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | franka        | franka  |
+-> done: ScheduleFillingCalendarStepDefinitions.ThenUserNeedsToEnterDetails(<table>) (1,1s)
+And User login
+-> done: ScheduleFillingCalendarStepDefinitions.ThenUserLogin() (0,3s)
+Then User will be successfully redirected to the initial form for veterinarian
+Number of open windows: 1
+Handle: 0x00070B62, Title: Početna veterinar
+-> done: UserLoginStepDefinitions.ThenUserWillBeSuccessfullyRedirectedToTheInitialFormForVeterinarian() (2,3s)
+Given User on the form for veterinarian should press button for report
+-> done: CreatingReportOfDigitalCartonStepDefinitions.GivenUserOnTheFormForVeterinarianShouldPressButtonForReport() (0,3s)
+When User selects pet from right corner:
+  --- table step argument ---
+  | ljubimac         |
+  | Mara Stjepanovic |
+Number of open windows: 1
+Handle: 0x00080B62, Title: Izvještaj
+-> done: CreatingReportOfDigitalCartonStepDefinitions.WhenUserSelectsPetFromRightCorner(<table>) (0,7s)
+And User selects appointment of pet
+Number of open windows: 1
+Handle: 0x00080B62, Title: Izvještaj
+-> done: CreatingReportOfDigitalCartonStepDefinitions.WhenUserSelectsAppointmentOfPet() (0,4s)
+And User selects button for report
+-> done: CreatingReportOfDigitalCartonStepDefinitions.WhenUserSelectsButtonForReport() (0,3s)
+Then User will be able to see form with report of selected pet
+Number of open windows: 1
+Handle: 0x00080B62, Title: Izvještaj
+-> done: CreatingReportOfDigitalCartonStepDefinitions.ThenUserWillBeAbleToSeeFormWithReportOfSelectedPet() (1,7s)
+
+
+TestContext Messages:
+Given User is on welcome form
+-> done: UserRegistrationStepDefinitions.GivenUserIsOnWelcomeForm() (0,6s)
+When User clicks on button prijava
+-> done: UserLoginStepDefinitions.WhenUserClicksOnButtonPrijava() (0,3s)
+Then User is on login form
+-> done: UserLoginStepDefinitions.ThenUserIsOnLoginForm() (0,4s)
+And User needs to enter details:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | franka        | franka  |
+-> done: ScheduleFillingCalendarStepDefinitions.ThenUserNeedsToEnterDetails(<table>) (1,1s)
+And User login
+-> done: ScheduleFillingCalendarStepDefinitions.ThenUserLogin() (0,3s)
+Then User will be successfully redirected to the initial form for veterinarian
+-> done: UserLoginStepDefinitions.ThenUserWillBeSuccessfullyRedirectedToTheInitialFormForVeterinarian() (2,3s)
+Given User on the form for veterinarian should press button for report
+-> done: CreatingReportOfDigitalCartonStepDefinitions.GivenUserOnTheFormForVeterinarianShouldPressButtonForReport() (0,3s)
+When User selects pet from right corner:
+  --- table step argument ---
+  | ljubimac         |
+  | Mara Stjepanovic |
+-> done: CreatingReportOfDigitalCartonStepDefinitions.WhenUserSelectsPetFromRightCorner(<table>) (0,7s)
+And User selects appointment of pet
+-> done: CreatingReportOfDigitalCartonStepDefinitions.WhenUserSelectsAppointmentOfPet() (0,4s)
+And User selects button for report
+-> done: CreatingReportOfDigitalCartonStepDefinitions.WhenUserSelectsButtonForReport() (0,3s)
+Then User will be able to see form with report of selected pet
+-> done: CreatingReportOfDigitalCartonStepDefinitions.ThenUserWillBeAbleToSeeFormWithReportOfSelectedPet() (1,7s)
