@@ -214,7 +214,7 @@ this.FeatureBackground();
 #line 22
  testRunner.When("the user selects the \"Create new profile\" option", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                             "Ime",
                             "Prezime",
                             "Broj iskaznice",
@@ -223,7 +223,7 @@ this.FeatureBackground();
                             "Tezina_Kg",
                             "Visina_Cm",
                             "Bilješke"});
-                table1.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "Petrica",
                             "Stjepanovic",
                             "1234567u",
@@ -233,7 +233,7 @@ this.FeatureBackground();
                             "10",
                             "Debela macka."});
 #line 23
- testRunner.And("the user fills out the fields with the following information:", ((string)(null)), table1, "And ");
+ testRunner.And("the user fills out the fields with the following information:", ((string)(null)), table2, "And ");
 #line hidden
 #line 26
  testRunner.And("the user clicks the \"Create profile and digital card\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -504,18 +504,18 @@ this.FeatureBackground();
 #line 61
  testRunner.When("the user selects the pet \"Mara Stjepanovic\" from the dropdown menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "Ime",
                             "Prezime",
                             "Tezina_Kg",
                             "Visina_Cm"});
-                table2.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "Maza",
                             "Stjepanovic",
                             "5",
                             "10"});
 #line 62
- testRunner.And("the user updates certain enabled fields with the following information:", ((string)(null)), table2, "And ");
+ testRunner.And("the user updates certain enabled fields with the following information:", ((string)(null)), table3, "And ");
 #line hidden
 #line 65
  testRunner.And("the user clicks the \"Update profile\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

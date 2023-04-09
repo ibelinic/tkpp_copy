@@ -8,7 +8,7 @@ using TechTalk.SpecFlow;
 namespace AcceptanceTests.StepDefinitions
 {
     [Binding]
-    public class UpdateAppintmentOnScheduleStepDefinitions
+    public class UpdateAppointmentOnScheduleStepDefinitions
     {
         [When(@"User selects appointment")]
         public void WhenUserSelectsAppointment()

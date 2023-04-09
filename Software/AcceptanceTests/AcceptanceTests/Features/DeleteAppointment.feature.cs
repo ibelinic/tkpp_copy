@@ -20,7 +20,7 @@ namespace AcceptanceTests.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class ScheduleFillingCalendarFeature
+    public partial class DeleteAppointmentFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -29,7 +29,7 @@ namespace AcceptanceTests.Features
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "ScheduleFillingCalendar.feature"
+#line 1 "DeleteAppointment.feature"
 #line hidden
         
         public virtual Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
@@ -48,8 +48,7 @@ namespace AcceptanceTests.Features
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "ScheduleFillingCalendar", "Application should provide user in the role of Veterinarian\r\na possibility to mak" +
-                    "e his own schedule for work inside of the calendar.", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "DeleteAppointment", "User in a role of veterinarian should be able to delete appointment.", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -64,9 +63,9 @@ namespace AcceptanceTests.Features
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "ScheduleFillingCalendar")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "DeleteAppointment")))
             {
-                global::AcceptanceTests.Features.ScheduleFillingCalendarFeature.FeatureSetup(null);
+                global::AcceptanceTests.Features.DeleteAppointmentFeature.FeatureSetup(null);
             }
         }
         
@@ -94,43 +93,43 @@ namespace AcceptanceTests.Features
         
         public virtual void FeatureBackground()
         {
-#line 6
+#line 5
 #line hidden
-#line 7
+#line 6
  testRunner.Given("User is on welcome form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 8
+#line 7
  testRunner.When("User clicks on button prijava", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 9
+#line 8
  testRunner.Then("User is on login form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-            TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "korisnickoIme",
                         "lozinka"});
-            table4.AddRow(new string[] {
+            table1.AddRow(new string[] {
                         "franka",
                         "franka"});
-#line 10
- testRunner.And("User needs to enter details:", ((string)(null)), table4, "And ");
+#line 9
+ testRunner.And("User needs to enter details:", ((string)(null)), table1, "And ");
 #line hidden
-#line 13
+#line 12
  testRunner.And("User login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 14
+#line 13
  testRunner.Then("User will be successfully redirected to the initial form for veterinarian", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Filling schedule with appointment for a week")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "ScheduleFillingCalendar")]
-        public virtual void FillingScheduleWithAppointmentForAWeek()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Deleting appointment from schedule")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "DeleteAppointment")]
+        public virtual void DeletingAppointmentFromSchedule()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Filling schedule with appointment for a week", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 16
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Deleting appointment from schedule", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 15
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -150,87 +149,19 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 6
+#line 5
 this.FeatureBackground();
+#line hidden
+#line 16
+ testRunner.Given("User clicks button his Schedule", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 17
- testRunner.Given("User clicks button his Schedule", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.When("User selects appointment", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 18
- testRunner.When("User select button for adding to the schedule", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("User selects button fo deleting appointment", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 19
- testRunner.And("Form for adding schedule is open", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
-                            "datum",
-                            "vrijeme_pocetka",
-                            "vrijeme_zavrsetka",
-                            "opis",
-                            "ljubimac"});
-                table5.AddRow(new string[] {
-                            "14.4.2023.",
-                            "12:00",
-                            "13:00",
-                            "Pregled ljubimca",
-                            "Missy Anic"});
-#line 20
- testRunner.And("User then fill with the following details:", ((string)(null)), table5, "And ");
-#line hidden
-#line 23
- testRunner.And("Select button for adding", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 24
- testRunner.Then("User should be able to view new appointment on the Schedule form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Quit adding new appointment")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "ScheduleFillingCalendar")]
-        public virtual void QuitAddingNewAppointment()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Quit adding new appointment", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 26
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 6
-this.FeatureBackground();
-#line hidden
-#line 27
- testRunner.Given("User clicks button his Schedule", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 28
- testRunner.When("User select button for adding to the schedule", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 29
- testRunner.And("Form for adding schedule is open", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 30
- testRunner.And("Select button for canceling", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 31
  testRunner.Then("User should be able to view new appointment on the Schedule form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

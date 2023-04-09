@@ -29,7 +29,7 @@ namespace AcceptanceTests.Features
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "UpdateAppintmentOnSchedule.feature"
+#line 1 "UpdateAppointmentOnSchedule.feature"
 #line hidden
         
         public virtual Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
@@ -104,14 +104,14 @@ namespace AcceptanceTests.Features
 #line 8
  testRunner.Then("User is on login form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-            TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
                         "korisnickoIme",
                         "lozinka"});
-            table5.AddRow(new string[] {
+            table6.AddRow(new string[] {
                         "franka",
                         "franka"});
 #line 9
- testRunner.And("User needs to enter details:", ((string)(null)), table5, "And ");
+ testRunner.And("User needs to enter details:", ((string)(null)), table6, "And ");
 #line hidden
 #line 12
  testRunner.And("User login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -161,12 +161,12 @@ this.FeatureBackground();
 #line 18
  testRunner.And("User selects button for update", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
                             "datum"});
-                table6.AddRow(new string[] {
+                table7.AddRow(new string[] {
                             "10.4.2023."});
 #line 19
- testRunner.And("User enter details:", ((string)(null)), table6, "And ");
+ testRunner.And("User enter details:", ((string)(null)), table7, "And ");
 #line hidden
 #line 22
  testRunner.And("User press button \"Update\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
