@@ -104,14 +104,14 @@ namespace AcceptanceTests.Features
 #line 8
  testRunner.Then("User is on login form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-            TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
                         "korisnickoIme",
                         "lozinka"});
-            table9.AddRow(new string[] {
+            table11.AddRow(new string[] {
                         "franka",
                         "franka"});
 #line 9
- testRunner.And("User needs to enter details:", ((string)(null)), table9, "And ");
+ testRunner.And("User needs to enter details:", ((string)(null)), table11, "And ");
 #line hidden
 #line 12
  testRunner.And("User login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -161,12 +161,12 @@ this.FeatureBackground();
 #line 18
  testRunner.And("User selects button for update", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
                             "datum"});
-                table10.AddRow(new string[] {
+                table12.AddRow(new string[] {
                             "10.4.2023."});
 #line 19
- testRunner.And("User enter details:", ((string)(null)), table10, "And ");
+ testRunner.And("User enter details:", ((string)(null)), table12, "And ");
 #line hidden
 #line 22
  testRunner.And("User press button \"Update\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

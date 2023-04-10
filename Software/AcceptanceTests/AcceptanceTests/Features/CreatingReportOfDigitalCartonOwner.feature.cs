@@ -20,7 +20,7 @@ namespace AcceptanceTests.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class SeeAllPastAppointmentsFeature
+    public partial class CreatingReportOfDigitalCartonOwnerFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -29,7 +29,7 @@ namespace AcceptanceTests.Features
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "SeeAllPastAppointments.feature"
+#line 1 "CreatingReportOfDigitalCartonOwner.feature"
 #line hidden
         
         public virtual Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
@@ -48,7 +48,8 @@ namespace AcceptanceTests.Features
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "SeeAllPastAppointments", "User as a vetereniar should be able to see all his past appointments.", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "CreatingReportOfDigitalCartonOwner", "User as a veterinarian should be able to create report of the pets digital carton" +
+                    ".", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -63,9 +64,9 @@ namespace AcceptanceTests.Features
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "SeeAllPastAppointments")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "CreatingReportOfDigitalCartonOwner")))
             {
-                global::AcceptanceTests.Features.SeeAllPastAppointmentsFeature.FeatureSetup(null);
+                global::AcceptanceTests.Features.CreatingReportOfDigitalCartonOwnerFeature.FeatureSetup(null);
             }
         }
         
@@ -93,43 +94,43 @@ namespace AcceptanceTests.Features
         
         public virtual void FeatureBackground()
         {
-#line 5
-#line hidden
 #line 6
- testRunner.Given("User is on welcome form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 7
- testRunner.When("User clicks on button prijava", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("User is on welcome form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 8
+ testRunner.When("User clicks on button prijava", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 9
  testRunner.Then("User is on login form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-            TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "korisnickoIme",
                         "lozinka"});
-            table10.AddRow(new string[] {
-                        "franka",
-                        "franka"});
-#line 9
- testRunner.And("User needs to enter details:", ((string)(null)), table10, "And ");
-#line hidden
-#line 12
- testRunner.And("User login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+            table1.AddRow(new string[] {
+                        "ana",
+                        "ana"});
+#line 10
+ testRunner.And("User needs to enter details:", ((string)(null)), table1, "And ");
 #line hidden
 #line 13
- testRunner.Then("User will be successfully redirected to the initial form for veterinarian", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("User login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 14
+ testRunner.Then("User will be successfully redirected to the initial form for owner", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Viewing all past appointments from schedule")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SeeAllPastAppointments")]
-        public virtual void ViewingAllPastAppointmentsFromSchedule()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Creating report as a Owner")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "CreatingReportOfDigitalCartonOwner")]
+        public virtual void CreatingReportAsAOwner()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Viewing all past appointments from schedule", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 15
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Creating report as a Owner", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 16
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -149,20 +150,30 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 5
+#line 6
 this.FeatureBackground();
 #line hidden
-#line 16
- testRunner.Given("User clicks button his Schedule", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
 #line 17
- testRunner.When("User selects button for past appointments", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("User need to go to profil", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                            "ljubimac"});
+                table2.AddRow(new string[] {
+                            "Rio Anic"});
 #line 18
- testRunner.And("User need to select button for going back", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("User selects pet:", ((string)(null)), table2, "When ");
 #line hidden
-#line 19
- testRunner.Then("User should be able to view new appointment on the Schedule form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 21
+ testRunner.And("User goes to digital carton", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 22
+ testRunner.And("User selects pet appointment", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 23
+ testRunner.And("User goes to report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 24
+ testRunner.Then("User will be able to see form with report of selected pet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

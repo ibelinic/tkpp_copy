@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\belin\\Source\\Repos\\tkipp-lgrzelj-iplavsic20-ibelinic20\\Software\\AcceptanceTests\\AcceptanceTests\\AcceptanceTests.csproj": {}
+    "E:\\PetVet-Testiranje-Novo\\Software\\AcceptanceTests\\AcceptanceTests\\AcceptanceTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\belin\\Source\\Repos\\tkipp-lgrzelj-iplavsic20-ibelinic20\\Software\\AcceptanceTests\\AcceptanceTests\\AcceptanceTests.csproj": {
+    "E:\\PetVet-Testiranje-Novo\\Software\\AcceptanceTests\\AcceptanceTests\\AcceptanceTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\belin\\Source\\Repos\\tkipp-lgrzelj-iplavsic20-ibelinic20\\Software\\AcceptanceTests\\AcceptanceTests\\AcceptanceTests.csproj",
+        "projectUniqueName": "E:\\PetVet-Testiranje-Novo\\Software\\AcceptanceTests\\AcceptanceTests\\AcceptanceTests.csproj",
         "projectName": "AcceptanceTests",
-        "projectPath": "C:\\Users\\belin\\Source\\Repos\\tkipp-lgrzelj-iplavsic20-ibelinic20\\Software\\AcceptanceTests\\AcceptanceTests\\AcceptanceTests.csproj",
-        "packagesPath": "C:\\Users\\belin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\belin\\Source\\Repos\\tkipp-lgrzelj-iplavsic20-ibelinic20\\Software\\AcceptanceTests\\AcceptanceTests\\obj\\",
+        "projectPath": "E:\\PetVet-Testiranje-Novo\\Software\\AcceptanceTests\\AcceptanceTests\\AcceptanceTests.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "E:\\PetVet-Testiranje-Novo\\Software\\AcceptanceTests\\AcceptanceTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\belin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,7 +69,7 @@
               "version": "[3.9.57, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

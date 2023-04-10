@@ -105,14 +105,14 @@ namespace AcceptanceTests.Features
 #line 9
  testRunner.Then("User is on login form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-            TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
                         "korisnickoIme",
                         "lozinka"});
-            table6.AddRow(new string[] {
+            table8.AddRow(new string[] {
                         "franka",
                         "franka"});
 #line 10
- testRunner.And("User needs to enter details:", ((string)(null)), table6, "And ");
+ testRunner.And("User needs to enter details:", ((string)(null)), table8, "And ");
 #line hidden
 #line 13
  testRunner.And("User login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -162,20 +162,20 @@ this.FeatureBackground();
 #line 19
  testRunner.And("Form for adding schedule is open", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
                             "datum",
                             "vrijeme_pocetka",
                             "vrijeme_zavrsetka",
                             "opis",
                             "ljubimac"});
-                table7.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "14.4.2023.",
                             "12:00",
                             "13:00",
                             "Pregled ljubimca",
                             "Missy Anic"});
 #line 20
- testRunner.And("User then fill with the following details:", ((string)(null)), table7, "And ");
+ testRunner.And("User then fill with the following details:", ((string)(null)), table9, "And ");
 #line hidden
 #line 23
  testRunner.And("Select button for adding", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

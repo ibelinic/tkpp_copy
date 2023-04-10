@@ -138,14 +138,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
                             "korisnickoIme",
                             "lozinka"});
-                table11.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "anastayija",
                             "anastayija"});
 #line 13
- testRunner.Given("User needs to enter details:", ((string)(null)), table11, "Given ");
+ testRunner.Given("User needs to enter details:", ((string)(null)), table13, "Given ");
 #line hidden
 #line 16
  testRunner.And("User login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -188,14 +188,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
                             "korisnickoIme",
                             "lozinka"});
-                table12.AddRow(new string[] {
+                table14.AddRow(new string[] {
                             "franka",
                             "franka"});
 #line 20
- testRunner.Given("User needs to enter details:", ((string)(null)), table12, "Given ");
+ testRunner.Given("User needs to enter details:", ((string)(null)), table14, "Given ");
 #line hidden
 #line 23
  testRunner.And("User login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -238,14 +238,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
                             "korisnickoIme",
                             "lozinka"});
-                table13.AddRow(new string[] {
+                table15.AddRow(new string[] {
                             "anastayija",
                             "ana"});
 #line 27
- testRunner.Given("User needs to enter details:", ((string)(null)), table13, "Given ");
+ testRunner.Given("User needs to enter details:", ((string)(null)), table15, "Given ");
 #line hidden
 #line 30
  testRunner.And("User login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

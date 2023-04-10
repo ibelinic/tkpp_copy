@@ -10,7 +10,7 @@ Background:
 Scenario: User Owner logout
 	Given User needs to enter details:
 	| korisnickoIme | lozinka |
-	| anastayija    | anastayija |
+	| ana    | ana |
 	And User login
 	And User would click button for logout
 	Then  User should be successfully redirected to the welcome form of the application
