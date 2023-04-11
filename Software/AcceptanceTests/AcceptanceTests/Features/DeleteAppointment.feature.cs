@@ -104,14 +104,14 @@ namespace AcceptanceTests.Features
 #line 8
  testRunner.Then("User is on login form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-            TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
                         "korisnickoIme",
                         "lozinka"});
-            table5.AddRow(new string[] {
+            table6.AddRow(new string[] {
                         "franka",
                         "franka"});
 #line 9
- testRunner.And("User needs to enter details:", ((string)(null)), table5, "And ");
+ testRunner.And("User needs to enter details:", ((string)(null)), table6, "And ");
 #line hidden
 #line 12
  testRunner.And("User login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

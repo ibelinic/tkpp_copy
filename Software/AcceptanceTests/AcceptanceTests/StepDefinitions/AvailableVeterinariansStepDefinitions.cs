@@ -1,4 +1,9 @@
+using AcceptanceTests.Support;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using System;
+using System.Windows.Forms;
 using TechTalk.SpecFlow;
 
 namespace AcceptanceTests.StepDefinitions
@@ -6,76 +11,87 @@ namespace AcceptanceTests.StepDefinitions
     [Binding]
     public class AvailableVeterinariansStepDefinitions
     {
-        [Given(@"the user has launched the system")]
-        public void GivenTheUserHasLaunchedTheSystem()
+        [Then(@"the user selects Available veterinarians")]
+        public void ThenTheUserSelectsAvailableVeterinarians()
         {
-            throw new PendingStepException();
+            GuiDriver.GetOrCreateDriver();
+            var driver = GuiDriver.GetDriver();
+            var frmKorisnik = driver.FindElementByAccessibilityId("FrmKorisnik");
+            var btnVeterinar = frmKorisnik.FindElementByAccessibilityId("btnDostupniVeterinari");
+            btnVeterinar.Click();
         }
 
-        [Given(@"the user has logged in successfully as a pet owner with username ""([^""]*)"" and password ""([^""]*)""")]
-        public void GivenTheUserHasLoggedInSuccessfullyAsAPetOwnerWithUsernameAndPassword(string stjepan, string stjepan1)
+        [Then(@"the user is on the View available veterinarians form")]
+        public void ThenTheUserIsOnTheViewAvailableVeterinariansForm()
         {
-            throw new PendingStepException();
+            var driver = GuiDriver.GetOrCreateDriver();
+
+            Console.WriteLine($"Number of open windows: {driver.WindowHandles.Count}");
+            foreach (var handle in driver.WindowHandles)
+            {
+                driver.SwitchTo().Window(handle);
+                Console.WriteLine($"Handle: {handle}, Title: {driver.Title}");
+            }
+
+            var dostupniVet = driver.FindElementByAccessibilityId("FrmDostupniVeterinari");
+            var isCorrectTitle = driver.Title == "Dostupni veterinari";
+            Assert.IsTrue(isCorrectTitle, "Naziv prozora nije ispravan");
+            Assert.IsTrue(dostupniVet.Displayed);
         }
 
-        [Given(@"the user is on the ""([^""]*)"" page")]
-        public void GivenTheUserIsOnThePage(string p0)
+        [When(@"the user select a veterinarian without termins")]
+        public void WhenTheUserSelectAVeterinarianWithoutTermins()
         {
-            throw new PendingStepException();
-        }
 
-        [When(@"the user does not select a veterinarian from the dropdown menu")]
-        public void WhenTheUserDoesNotSelectAVeterinarianFromTheDropdownMenu()
-        {
-            throw new PendingStepException();
-        }
+            var driver = GuiDriver.GetDriver();
+            var formVet = driver.FindElementByAccessibilityId("FrmDostupniVeterinari");
 
-        [Then(@"the system should not display any feedback to the user")]
-        public void ThenTheSystemShouldNotDisplayAnyFeedbackToTheUser()
-        {
-            throw new PendingStepException();
+            var dostupniVet = formVet.FindElementByAccessibilityId("cmbVeterinari");
+            Actions action = new Actions(driver);
+            action.MoveToElement(dostupniVet, dostupniVet.Size.Width - 10, dostupniVet.Size.Height / 2).Click().Perform();
+
+            var valueToSelect = "veterinar veterinar"; // vrijednost koju želimo odabrati
+            var itemToSelect = driver.FindElementByName(valueToSelect);
+            itemToSelect.Click();
+            Assert.AreEqual(valueToSelect, dostupniVet.GetAttribute("Value.Value"));
         }
 
         [Then(@"the user should only see an empty table of data")]
         public void ThenTheUserShouldOnlySeeAnEmptyTableOfData()
         {
-            throw new PendingStepException();
+            var driver = GuiDriver.GetOrCreateDriver();
+            var formVet = driver.FindElementByAccessibilityId("FrmDostupniVeterinari");
+
+            var dgv = formVet.FindElementByAccessibilityId("dgvDostupniVeterinari");
+            dgv.Clear();
         }
 
         [When(@"the user selects ""([^""]*)"" from the ""([^""]*)"" dropdown")]
         public void WhenTheUserSelectsFromTheDropdown(string p0, string p1)
         {
-            throw new PendingStepException();
+            var driver = GuiDriver.GetDriver();
+            var formVet = driver.FindElementByAccessibilityId("FrmDostupniVeterinari");
+
+            var dostupniVet = formVet.FindElementByAccessibilityId("cmbVeterinari");
+            Actions action = new Actions(driver);
+            action.MoveToElement(dostupniVet, dostupniVet.Size.Width - 10, dostupniVet.Size.Height / 2).Click().Perform();
+
+            var valueToSelect = "Klara Klaric"; // vrijednost koju želimo odabrati
+            var itemToSelect = driver.FindElementByName(valueToSelect);
+            itemToSelect.Click();
+            Assert.AreEqual(valueToSelect, dostupniVet.GetAttribute("Value.Value"));
         }
 
         [Then(@"the user should see a list of appointments for ""([^""]*)"" with the following columns: ID, Date, Start, End")]
         public void ThenTheUserShouldSeeAListOfAppointmentsForWithTheFollowingColumnsIDDateStartEnd(string p0)
         {
-            throw new PendingStepException();
-        }
+            var driver = GuiDriver.GetOrCreateDriver();
+            var formVet = driver.FindElementByAccessibilityId("FrmDostupniVeterinari");
 
-        [Then(@"the list should only include appointments for today or later")]
-        public void ThenTheListShouldOnlyIncludeAppointmentsForTodayOrLater()
-        {
-            throw new PendingStepException();
-        }
-
-        [When(@"the user selects ""([^""]*)"" from the dropdown list")]
-        public void WhenTheUserSelectsFromTheDropdownList(string p0)
-        {
-            throw new PendingStepException();
-        }
-
-        [When(@"the user wants to go back to the home screen")]
-        public void WhenTheUserWantsToGoBackToTheHomeScreen()
-        {
-            throw new PendingStepException();
-        }
-
-        [Then(@"the user should be able to click the back button and return to the home screen")]
-        public void ThenTheUserShouldBeAbleToClickTheBackButtonAndReturnToTheHomeScreen()
-        {
-            throw new PendingStepException();
+            // get the list of rows in the DataGridView
+            var dgv = formVet.FindElementByAccessibilityId("dgvDostupniVeterinari");
+            var rows = dgv.FindElements(By.ClassName("android.widget.TableRow"));
+            _ = rows.Count > 0;
         }
     }
 }

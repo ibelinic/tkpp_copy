@@ -138,7 +138,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 6
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table22 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table23 = new TechTalk.SpecFlow.Table(new string[] {
                             "ime",
                             "prezime",
                             "adresa",
@@ -147,7 +147,7 @@ this.FeatureBackground();
                             "korisnik",
                             "lozinka",
                             "uloga"});
-                table22.AddRow(new string[] {
+                table23.AddRow(new string[] {
                             "Anastayija",
                             "Stayić",
                             "Kolodvorska 60",
@@ -157,7 +157,7 @@ this.FeatureBackground();
                             "anastayija",
                             "Vlasnik"});
 #line 12
-    testRunner.Given("User enters the following details:", ((string)(null)), table22, "Given ");
+    testRunner.Given("User enters the following details:", ((string)(null)), table23, "Given ");
 #line hidden
 #line 15
     testRunner.And("User clicks button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
