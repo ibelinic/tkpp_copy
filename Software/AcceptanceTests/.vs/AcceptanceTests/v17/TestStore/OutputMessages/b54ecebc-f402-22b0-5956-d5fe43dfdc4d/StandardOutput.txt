@@ -1,0 +1,95 @@
+-> Loading plugin C:\Users\belin\source\repos\Projekt\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\LivingDoc.SpecFlowPlugin.dll
+-> Loading plugin C:\Users\belin\source\repos\Projekt\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll
+-> Loading plugin C:\Users\belin\source\repos\Projekt\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\AcceptanceTests.dll
+-> Using default config
+Given the user has launched the system of feature A
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.GivenTheUserHasLaunchedTheSystemOfFeatureA() (0.9s)
+And the user is on the welcome form
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.GivenTheUserIsOnTheWelcomeForm() (0.1s)
+When the user clicks on the button "Prijava"
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.WhenTheUserClicksOnTheButton("Prijava") (0.4s)
+Then the user is on the login form
+Number of open windows: 1
+Handle: 0x00030928, Title: FrmPrijava
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserIsOnTheLoginForm() (0.5s)
+And the user needs to enter vet details:
+  --- table step argument ---
+  | korisnickoIme | lozinka   |
+  | veterinar     | veterinar |
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserNeedsToEnterVetDetails(<table>) (1.3s)
+And the user login
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserLogin() (0.4s)
+Then the user will be successfully redirected to the initial form for vet
+Number of open windows: 1
+Handle: 0x0011090C, Title: Početna veterinar
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserWillBeSuccessfullyRedirectedToTheInitialFormForVet() (3.8s)
+And the user selects Recording
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserSelectsRecording() (0.4s)
+And the user is on the Recording form
+Number of open windows: 1
+Handle: 0x0011090C, Title: Početna veterinar
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserIsOnTheRecordingForm() (0.7s)
+When the user selects a pet "Rio Anic" from the dropdown menu
+-> done: RecordingTreatmentsStepDefinitions.WhenTheUserSelectsAPetFromTheDropdownMenu("Rio Anic") (1.5s)
+And the user selects a date and reason for the visit:
+  --- table step argument ---
+  | datumPosjete | razlog       |
+  | 13.12.2023   | dobar razlog |
+-> done: RecordingTreatmentsStepDefinitions.WhenTheUserSelectsADateAndReasonForTheVisit(<table>) (1.7s)
+And the user clicks on "Save visit" checkbox
+-> done: RecordingTreatmentsStepDefinitions.WhenTheUserClicksOnCheckbox("Save visit") (0.4s)
+Then a new visit is successfully recorded so the fields for disease and medication are enabled
+-> done: RecordingTreatmentsStepDefinitions.ThenANewVisitIsSuccessfullyRecordedSoTheFieldsForDiseaseAndMedicationAreEnabled() (0.5s)
+And the user fills in the fields for disease and medication with valid data and selects a date for the start of symptoms:
+  --- table step argument ---
+  | Bolest             | OpisB                 | DatumB     | Lijek          | OpisL                 |
+  | slabasnasta bolest | opis slabasne bolesti | 11.12.2022 | slabasni lijek | opis slabasnog lijeka |
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserFillsInTheFieldsForDiseaseAndMedicationWithValidDataAndSelectsADateForTheStartOfSymptoms(<table>) (5.9s)
+And the user clicks on "Record a new visit" button
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserClicksOnButton("Record a new visit") (0.4s)
+Then the new visit is successfully recorded so all fields are cleared
+-> done: RecordingTreatmentsStepDefinitions.ThenTheNewVisitIsSuccessfullyRecordedAndAllFieldsAreCleared() (1.2s)
+
+
+TestContext Messages:
+Given the user has launched the system of feature A
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.GivenTheUserHasLaunchedTheSystemOfFeatureA() (0.9s)
+And the user is on the welcome form
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.GivenTheUserIsOnTheWelcomeForm() (0.1s)
+When the user clicks on the button "Prijava"
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.WhenTheUserClicksOnTheButton("Prijava") (0.4s)
+Then the user is on the login form
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserIsOnTheLoginForm() (0.5s)
+And the user needs to enter vet details:
+  --- table step argument ---
+  | korisnickoIme | lozinka   |
+  | veterinar     | veterinar |
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserNeedsToEnterVetDetails(<table>) (1.3s)
+And the user login
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserLogin() (0.4s)
+Then the user will be successfully redirected to the initial form for vet
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserWillBeSuccessfullyRedirectedToTheInitialFormForVet() (3.8s)
+And the user selects Recording
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserSelectsRecording() (0.4s)
+And the user is on the Recording form
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserIsOnTheRecordingForm() (0.7s)
+When the user selects a pet "Rio Anic" from the dropdown menu
+-> done: RecordingTreatmentsStepDefinitions.WhenTheUserSelectsAPetFromTheDropdownMenu("Rio Anic") (1.5s)
+And the user selects a date and reason for the visit:
+  --- table step argument ---
+  | datumPosjete | razlog       |
+  | 13.12.2023   | dobar razlog |
+-> done: RecordingTreatmentsStepDefinitions.WhenTheUserSelectsADateAndReasonForTheVisit(<table>) (1.7s)
+And the user clicks on "Save visit" checkbox
+-> done: RecordingTreatmentsStepDefinitions.WhenTheUserClicksOnCheckbox("Save visit") (0.4s)
+Then a new visit is successfully recorded so the fields for disease and medication are enabled
+-> done: RecordingTreatmentsStepDefinitions.ThenANewVisitIsSuccessfullyRecordedSoTheFieldsForDiseaseAndMedicationAreEnabled() (0.5s)
+And the user fills in the fields for disease and medication with valid data and selects a date for the start of symptoms:
+  --- table step argument ---
+  | Bolest             | OpisB                 | DatumB     | Lijek          | OpisL                 |
+  | slabasnasta bolest | opis slabasne bolesti | 11.12.2022 | slabasni lijek | opis slabasnog lijeka |
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserFillsInTheFieldsForDiseaseAndMedicationWithValidDataAndSelectsADateForTheStartOfSymptoms(<table>) (5.9s)
+And the user clicks on "Record a new visit" button
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserClicksOnButton("Record a new visit") (0.4s)
+Then the new visit is successfully recorded so all fields are cleared
+-> done: RecordingTreatmentsStepDefinitions.ThenTheNewVisitIsSuccessfullyRecordedAndAllFieldsAreCleared() (1.2s)

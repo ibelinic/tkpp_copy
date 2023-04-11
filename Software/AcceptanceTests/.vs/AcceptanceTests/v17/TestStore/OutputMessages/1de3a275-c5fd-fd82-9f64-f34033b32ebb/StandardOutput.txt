@@ -1,0 +1,87 @@
+-> Loading plugin C:\Users\belin\source\repos\Projekt\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\LivingDoc.SpecFlowPlugin.dll
+-> Loading plugin C:\Users\belin\source\repos\Projekt\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll
+-> Loading plugin C:\Users\belin\source\repos\Projekt\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\AcceptanceTests.dll
+-> Using default config
+Given the user has launched the system of feature A
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.GivenTheUserHasLaunchedTheSystemOfFeatureA() (0.9s)
+And the user is on the welcome form
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.GivenTheUserIsOnTheWelcomeForm() (0.1s)
+When the user clicks on the button "Prijava"
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.WhenTheUserClicksOnTheButton("Prijava") (0.4s)
+Then the user is on the login form
+Number of open windows: 1
+Handle: 0x0004097E, Title: FrmPrijava
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserIsOnTheLoginForm() (0.6s)
+And the user needs to enter vet details:
+  --- table step argument ---
+  | korisnickoIme | lozinka   |
+  | veterinar     | veterinar |
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserNeedsToEnterVetDetails(<table>) (1.3s)
+And the user login
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserLogin() (0.4s)
+Then the user will be successfully redirected to the initial form for vet
+Number of open windows: 1
+Handle: 0x0004093E, Title: Početna veterinar
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserWillBeSuccessfullyRedirectedToTheInitialFormForVet() (3.8s)
+And the user selects Recording
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserSelectsRecording() (0.4s)
+And the user is on the Recording form
+Number of open windows: 1
+Handle: 0x0004093E, Title: Početna veterinar
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserIsOnTheRecordingForm() (0.7s)
+When the user selects the pet "Rio Anic" from the dropdown list
+-> done: RecordingTreatmentsStepDefinitions.WhenTheUserSelectsThePetFromTheDropdownList("Rio Anic") (1.4s)
+And the user selects a new visit date of his choice of feature:
+  --- table step argument ---
+  | datum      |
+  | 17.4.2022. |
+-> done: RecordingTreatmentsStepDefinitions.WhenTheUserSelectsANewVisitDateOfHisChoiceOfFeature(<table>) (0.8s)
+And the user fills in the reason field with any reason:
+  --- table step argument ---
+  | razlog            |
+  | jako dobar razlog |
+-> done: RecordingTreatmentsStepDefinitions.WhenTheUserFillsInTheFieldWithAnyReason(<table>) (1.2s)
+And the user clicks saving button of feature
+-> done: RecordingTreatmentsStepDefinitions.WhenTheUserClicksSavingButtonOfFeature() (0.4s)
+Then the previous data in the fields should be cleared automatically because visit is saved
+-> done: RecordingTreatmentsStepDefinitions.ThenThePreviousDataInTheFieldsShouldBeClearedAutomaticallyBecauseVisitIsSaved() (1.0s)
+
+
+TestContext Messages:
+Given the user has launched the system of feature A
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.GivenTheUserHasLaunchedTheSystemOfFeatureA() (0.9s)
+And the user is on the welcome form
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.GivenTheUserIsOnTheWelcomeForm() (0.1s)
+When the user clicks on the button "Prijava"
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.WhenTheUserClicksOnTheButton("Prijava") (0.4s)
+Then the user is on the login form
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserIsOnTheLoginForm() (0.6s)
+And the user needs to enter vet details:
+  --- table step argument ---
+  | korisnickoIme | lozinka   |
+  | veterinar     | veterinar |
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserNeedsToEnterVetDetails(<table>) (1.3s)
+And the user login
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserLogin() (0.4s)
+Then the user will be successfully redirected to the initial form for vet
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserWillBeSuccessfullyRedirectedToTheInitialFormForVet() (3.8s)
+And the user selects Recording
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserSelectsRecording() (0.4s)
+And the user is on the Recording form
+-> done: RecordingTreatmentsStepDefinitions.ThenTheUserIsOnTheRecordingForm() (0.7s)
+When the user selects the pet "Rio Anic" from the dropdown list
+-> done: RecordingTreatmentsStepDefinitions.WhenTheUserSelectsThePetFromTheDropdownList("Rio Anic") (1.4s)
+And the user selects a new visit date of his choice of feature:
+  --- table step argument ---
+  | datum      |
+  | 17.4.2022. |
+-> done: RecordingTreatmentsStepDefinitions.WhenTheUserSelectsANewVisitDateOfHisChoiceOfFeature(<table>) (0.8s)
+And the user fills in the reason field with any reason:
+  --- table step argument ---
+  | razlog            |
+  | jako dobar razlog |
+-> done: RecordingTreatmentsStepDefinitions.WhenTheUserFillsInTheFieldWithAnyReason(<table>) (1.2s)
+And the user clicks saving button of feature
+-> done: RecordingTreatmentsStepDefinitions.WhenTheUserClicksSavingButtonOfFeature() (0.4s)
+Then the previous data in the fields should be cleared automatically because visit is saved
+-> done: RecordingTreatmentsStepDefinitions.ThenThePreviousDataInTheFieldsShouldBeClearedAutomaticallyBecauseVisitIsSaved() (1.0s)

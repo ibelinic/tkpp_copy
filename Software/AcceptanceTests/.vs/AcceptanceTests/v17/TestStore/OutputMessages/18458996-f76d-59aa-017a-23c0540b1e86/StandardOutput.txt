@@ -1,0 +1,63 @@
+-> Loading plugin C:\Users\belin\source\repos\Projekt\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\LivingDoc.SpecFlowPlugin.dll
+-> Loading plugin C:\Users\belin\source\repos\Projekt\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll
+-> Loading plugin C:\Users\belin\source\repos\Projekt\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\AcceptanceTests.dll
+-> Using default config
+Given the user has launched the system of feature A
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.GivenTheUserHasLaunchedTheSystemOfFeatureA() (1.9s)
+And the user is on the welcome form
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.GivenTheUserIsOnTheWelcomeForm() (0.2s)
+When the user clicks on the button "Prijava"
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.WhenTheUserClicksOnTheButton("Prijava") (0.5s)
+Then the user is on the login form
+Number of open windows: 1
+Handle: 0x001B052E, Title: FrmPrijava
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserIsOnTheLoginForm() (1.1s)
+And the user needs to enter details:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | stjepan       | stjepan |
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserNeedsToEnterDetails(<table>) (1.2s)
+And the user login
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserLogin() (0.4s)
+Then the user will be successfully redirected to the initial form for owner
+Number of open windows: 1
+Handle: 0x0009065A, Title: Početna Korisnik
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserWillBeSuccessfullyRedirectedToTheInitialFormForOwner() (3.5s)
+And the user selects Available veterinarians
+-> done: AvailableVeterinariansStepDefinitions.ThenTheUserSelectsAvailableVeterinarians() (0.4s)
+And the user is on the View available veterinarians form
+Number of open windows: 1
+Handle: 0x000A065A, Title: Dostupni veterinari
+-> done: AvailableVeterinariansStepDefinitions.ThenTheUserIsOnTheViewAvailableVeterinariansForm() (0.7s)
+When the user selects "Klara Klaric" from the "Vet Selection" dropdown
+-> done: AvailableVeterinariansStepDefinitions.WhenTheUserSelectsFromTheDropdown("Klara Klaric", "Vet Selection") (1.6s)
+Then the user should see a list of appointments for "Klara Klaric" with the following columns: ID, Date, Start, End
+-> done: AvailableVeterinariansStepDefinitions.ThenTheUserShouldSeeAListOfAppointmentsForWithTheFollowingColumnsIDDateStartEnd("Klara Klaric") (0.3s)
+
+
+TestContext Messages:
+Given the user has launched the system of feature A
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.GivenTheUserHasLaunchedTheSystemOfFeatureA() (1.9s)
+And the user is on the welcome form
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.GivenTheUserIsOnTheWelcomeForm() (0.2s)
+When the user clicks on the button "Prijava"
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.WhenTheUserClicksOnTheButton("Prijava") (0.5s)
+Then the user is on the login form
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserIsOnTheLoginForm() (1.1s)
+And the user needs to enter details:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | stjepan       | stjepan |
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserNeedsToEnterDetails(<table>) (1.2s)
+And the user login
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserLogin() (0.4s)
+Then the user will be successfully redirected to the initial form for owner
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserWillBeSuccessfullyRedirectedToTheInitialFormForOwner() (3.5s)
+And the user selects Available veterinarians
+-> done: AvailableVeterinariansStepDefinitions.ThenTheUserSelectsAvailableVeterinarians() (0.4s)
+And the user is on the View available veterinarians form
+-> done: AvailableVeterinariansStepDefinitions.ThenTheUserIsOnTheViewAvailableVeterinariansForm() (0.7s)
+When the user selects "Klara Klaric" from the "Vet Selection" dropdown
+-> done: AvailableVeterinariansStepDefinitions.WhenTheUserSelectsFromTheDropdown("Klara Klaric", "Vet Selection") (1.6s)
+Then the user should see a list of appointments for "Klara Klaric" with the following columns: ID, Date, Start, End
+-> done: AvailableVeterinariansStepDefinitions.ThenTheUserShouldSeeAListOfAppointmentsForWithTheFollowingColumnsIDDateStartEnd("Klara Klaric") (0.3s)

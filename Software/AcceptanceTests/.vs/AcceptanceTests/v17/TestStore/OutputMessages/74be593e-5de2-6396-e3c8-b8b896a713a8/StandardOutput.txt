@@ -1,0 +1,79 @@
+-> Loading plugin C:\Users\belin\source\repos\Projekt\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\LivingDoc.SpecFlowPlugin.dll
+-> Loading plugin C:\Users\belin\source\repos\Projekt\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll
+-> Loading plugin C:\Users\belin\source\repos\Projekt\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\AcceptanceTests.dll
+-> Using default config
+Given the user has launched the system of feature A
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.GivenTheUserHasLaunchedTheSystemOfFeatureA() (0.9s)
+And the user is on the welcome form
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.GivenTheUserIsOnTheWelcomeForm() (0.1s)
+When the user clicks on the button "Prijava"
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.WhenTheUserClicksOnTheButton("Prijava") (0.4s)
+Then the user is on the login form
+Number of open windows: 1
+Handle: 0x0003072E, Title: FrmPrijava
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserIsOnTheLoginForm() (0.5s)
+And the user needs to enter details:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | stjepan       | stjepan |
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserNeedsToEnterDetails(<table>) (1.1s)
+And the user login
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserLogin() (0.4s)
+Then the user will be successfully redirected to the initial form for owner
+Number of open windows: 1
+Handle: 0x001006F4, Title: Početna Korisnik
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserWillBeSuccessfullyRedirectedToTheInitialFormForOwner() (3.4s)
+And the user selects Profile
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserSelectsProfile() (0.4s)
+And the user is on the Profile form
+Number of open windows: 1
+Handle: 0x0025075C, Title: FrmProfil
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserIsOnTheProfileForm() (0.5s)
+When the user selects the "Create new profile" option
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.WhenTheUserSelectsTheOption("Create new profile") (1.4s)
+And the user fills out all fields with valid data:
+  --- table step argument ---
+  | Ime  | Prezime     | Broj iskaznice | Pasmina ljubimca | BrojChipa | Tezina_Kg | Visina_Cm | Bilješke          |
+  | Beta | Stjepanovic | 12345676       | Macka            | 76543210  | 6         | 10        | Debela macketina. |
+Number of open windows: 1
+Handle: 0x0025075C, Title: FrmProfil
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.WhenTheUserFillsOutAllFieldsWithValidData(<table>) (4.8s)
+And the user clicks on the "Create profile and digital card" button of feature C
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.WhenTheUserClicksOnTheButtonOfFeatureC("Create profile an...") (0.4s)
+Then the new pet is visible in the drop-down menu of pet list
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheNewPetIsVisibleInTheDrop_DownMenuOfPetList() (2.0s)
+
+
+TestContext Messages:
+Given the user has launched the system of feature A
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.GivenTheUserHasLaunchedTheSystemOfFeatureA() (0.9s)
+And the user is on the welcome form
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.GivenTheUserIsOnTheWelcomeForm() (0.1s)
+When the user clicks on the button "Prijava"
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.WhenTheUserClicksOnTheButton("Prijava") (0.4s)
+Then the user is on the login form
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserIsOnTheLoginForm() (0.5s)
+And the user needs to enter details:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | stjepan       | stjepan |
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserNeedsToEnterDetails(<table>) (1.1s)
+And the user login
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserLogin() (0.4s)
+Then the user will be successfully redirected to the initial form for owner
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserWillBeSuccessfullyRedirectedToTheInitialFormForOwner() (3.4s)
+And the user selects Profile
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserSelectsProfile() (0.4s)
+And the user is on the Profile form
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheUserIsOnTheProfileForm() (0.5s)
+When the user selects the "Create new profile" option
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.WhenTheUserSelectsTheOption("Create new profile") (1.4s)
+And the user fills out all fields with valid data:
+  --- table step argument ---
+  | Ime  | Prezime     | Broj iskaznice | Pasmina ljubimca | BrojChipa | Tezina_Kg | Visina_Cm | Bilješke          |
+  | Beta | Stjepanovic | 12345676       | Macka            | 76543210  | 6         | 10        | Debela macketina. |
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.WhenTheUserFillsOutAllFieldsWithValidData(<table>) (4.8s)
+And the user clicks on the "Create profile and digital card" button of feature C
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.WhenTheUserClicksOnTheButtonOfFeatureC("Create profile an...") (0.4s)
+Then the new pet is visible in the drop-down menu of pet list
+-> done: Profile_Creating_Deleting_UpdatingStepDefinitions.ThenTheNewPetIsVisibleInTheDrop_DownMenuOfPetList() (2.0s)

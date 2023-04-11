@@ -441,7 +441,7 @@ namespace AcceptanceTests.StepDefinitions
             Actions action = new Actions(driver);
             action.MoveToElement(profilLjubimca, profilLjubimca.Size.Width - 10, profilLjubimca.Size.Height / 2).Click().Perform();
 
-            var valueToSelect = "Masa Stjepanovic"; // vrijednost koju želimo odabrati
+            var valueToSelect = "Mara Stjepanovic"; // vrijednost koju želimo odabrati
             var itemToSelect = driver.FindElementByName(valueToSelect);
             itemToSelect.Click();
             Assert.AreEqual(valueToSelect, profilLjubimca.GetAttribute("Value.Value"));
