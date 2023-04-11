@@ -48,9 +48,13 @@ namespace AcceptanceTests.Features
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Profile_Creating_Deleting_Updating", "As a pet owner,\r\nThe user wants to have the ability to create a new pet profile, " +
-                    "delete an existing pet profile, and edit data about an existing pet\r\nSo that he " +
-                    "can manage profiles.", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Profile_Creating_Deleting_Updating", @"As a pet owner,
+The user wants to have the ability to create a new pet profile, delete an existing pet profile, and edit data about an existing pet
+So that he can manage profiles.
+
+As a pet owner,
+The user wants to have the ability to create a new pet profile, delete an existing pet profile, and edit data about an existing pet
+So that he can manage profiles.", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -95,34 +99,52 @@ namespace AcceptanceTests.Features
         
         public virtual void FeatureBackground()
         {
-#line 7
+#line 11
 #line hidden
-#line 8
- testRunner.Given("the user has launched the system", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 12
+ testRunner.Given("the user has launched the system of feature A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 9
- testRunner.And("the user has logged in successfully as a pet owner with username \"stjepan\" and pa" +
-                    "ssword \"stjepan\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 13
+ testRunner.And("the user is on the welcome form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 10
- testRunner.And("the user is on the \"Profile\" page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 14
+ testRunner.When("the user clicks on the button \"Prijava\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 15
+ testRunner.Then("the user is on the login form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                        "korisnickoIme",
+                        "lozinka"});
+            table6.AddRow(new string[] {
+                        "stjepan",
+                        "stjepan"});
+#line 16
+ testRunner.And("the user needs to enter details:", ((string)(null)), table6, "And ");
+#line hidden
+#line 19
+ testRunner.And("the user login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 20
+ testRunner.Then("the user will be successfully redirected to the initial form for owner", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 21
+ testRunner.And("the user selects Profile", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 22
+ testRunner.And("the user is on the Profile form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
-        public virtual void CreatingANewPetProfileWithMissingFieldField(string ime, string prezime, string brojIskaznice, string pasminaLjubimca, string brojChipa, string tezina_Kg, string visina_Cm, string biljeske, string[] exampleTags)
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Creating a new pet profile with missing \"<field>\" field")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Profile_Creating_Deleting_Updating")]
+        public virtual void CreatingANewPetProfileWithMissingFieldField()
         {
-            string[] tagsOfScenario = exampleTags;
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("Ime", ime);
-            argumentsOfScenario.Add("Prezime", prezime);
-            argumentsOfScenario.Add("Broj iskaznice", brojIskaznice);
-            argumentsOfScenario.Add("Pasmina ljubimca", pasminaLjubimca);
-            argumentsOfScenario.Add("BrojChipa", brojChipa);
-            argumentsOfScenario.Add("Tezina_Kg", tezina_Kg);
-            argumentsOfScenario.Add("Visina_Cm", visina_Cm);
-            argumentsOfScenario.Add("Bilješke", biljeske);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Creating a new pet profile with missing \"<field>\" field", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 12
+#line 24
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -142,42 +164,40 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 7
+#line 11
 this.FeatureBackground();
 #line hidden
-#line 13
+#line 25
  testRunner.When("the user selects the \"Create new profile\" option", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 14
- testRunner.And("the user fills out the required fields except for the \"<field>\" field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Ime",
+                            "Broj iskaznice",
+                            "Pasmina ljubimca",
+                            "BrojChipa",
+                            "Tezina_Kg",
+                            "Visina_Cm",
+                            "Bilješke"});
+                table7.AddRow(new string[] {
+                            "Lana",
+                            "89076548",
+                            "Macka",
+                            "78090907",
+                            "5",
+                            "10",
+                            "Zdrava macka"});
+#line 26
+ testRunner.And("the user fills out the required fields except for one field:", ((string)(null)), table7, "And ");
 #line hidden
-#line 15
- testRunner.And("the user clicks on \"Create profile and digital card\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 29
+ testRunner.And("the user clicks on \"Create profile and digital card\" button of feature A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 16
- testRunner.Then("an error message should be displayed to the user to enter the required \"<field>\" " +
-                        "information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 30
+ testRunner.Then("an error message \"Nisu uneseni svi podaci!\" should be displayed to the user to en" +
+                        "ter the required information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Creating a new pet profile with missing \"<field>\" field: ")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Profile_Creating_Deleting_Updating")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Ime", "")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Prezime", "")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Broj iskaznice", "")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Pasmina ljubimca", "")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:BrojChipa", "")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Tezina_Kg", "")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Visina_Cm", "")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Bilješke", "")]
-        public virtual void CreatingANewPetProfileWithMissingFieldField_()
-        {
-#line 12
-this.CreatingANewPetProfileWithMissingFieldField("", "", "", "", "", "", "", "", ((string[])(null)));
-#line hidden
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
@@ -188,7 +208,7 @@ this.CreatingANewPetProfileWithMissingFieldField("", "", "", "", "", "", "", "",
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Entering invalid field values when creating a new pet profile", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 21
+#line 32
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -208,13 +228,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 7
+#line 11
 this.FeatureBackground();
 #line hidden
-#line 22
+#line 33
  testRunner.When("the user selects the \"Create new profile\" option", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
                             "Ime",
                             "Prezime",
                             "Broj iskaznice",
@@ -223,7 +243,7 @@ this.FeatureBackground();
                             "Tezina_Kg",
                             "Visina_Cm",
                             "Bilješke"});
-                table6.AddRow(new string[] {
+                table8.AddRow(new string[] {
                             "Petrica",
                             "Stjepanovic",
                             "1234567u",
@@ -232,105 +252,28 @@ this.FeatureBackground();
                             "6",
                             "10",
                             "Debela macka."});
-#line 23
- testRunner.And("the user fills out the fields with the following information:", ((string)(null)), table6, "And ");
+#line 34
+ testRunner.And("the user fills out the fields with the following information:", ((string)(null)), table8, "And ");
 #line hidden
-#line 26
- testRunner.And("the user clicks the \"Create profile and digital card\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 37
+ testRunner.And("the user clicks on the \"Create profile and digital card\" button of feature B", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 27
+#line 38
  testRunner.Then("the user should see an error message indicating that some fields contain invalid " +
                         "values", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 28
- testRunner.And("the pet profile should not be created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        public virtual void FillOutAllFieldsCorrectlyAndCreateANewPetProfile(string ime, string prezime, string brojIskaznice, string pasminaLjubimca, string brojChipa, string tezina_Kg, string visina_Cm, string biljeske, string[] exampleTags)
-        {
-            string[] tagsOfScenario = exampleTags;
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("Ime", ime);
-            argumentsOfScenario.Add("Prezime", prezime);
-            argumentsOfScenario.Add("Broj iskaznice", brojIskaznice);
-            argumentsOfScenario.Add("Pasmina ljubimca", pasminaLjubimca);
-            argumentsOfScenario.Add("BrojChipa", brojChipa);
-            argumentsOfScenario.Add("Tezina_Kg", tezina_Kg);
-            argumentsOfScenario.Add("Visina_Cm", visina_Cm);
-            argumentsOfScenario.Add("Bilješke", biljeske);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Fill out all fields correctly and create a new pet profile", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 30
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 7
-this.FeatureBackground();
-#line hidden
-#line 31
- testRunner.When("the user selects the \"Create new profile\" option", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 32
- testRunner.And("the user fills out all fields with valid data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 33
- testRunner.And("the user clicks on the \"Create profile and digital card\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 34
- testRunner.Then("the new pet profile is successfully created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 35
- testRunner.And("the new pet is visible in the drop-down menu of pet list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
             }
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Fill out all fields correctly and create a new pet profile: Petrica")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Fill out all fields correctly and create a new pet profile")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Profile_Creating_Deleting_Updating")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Petrica")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Ime", "Petrica")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Prezime", "Stjepanovic")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Broj iskaznice", "12345677")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Pasmina ljubimca", "76543210")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:BrojChipa", "Macka")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Tezina_Kg", "6")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Visina_Cm", "10")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:Bilješke", "Debela macka.")]
-        public virtual void FillOutAllFieldsCorrectlyAndCreateANewPetProfile_Petrica()
-        {
-#line 30
-this.FillOutAllFieldsCorrectlyAndCreateANewPetProfile("Petrica", "Stjepanovic", "12345677", "76543210", "Macka", "6", "10", "Debela macka.", ((string[])(null)));
-#line hidden
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Deleting a pet profile without selecting a pet")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Profile_Creating_Deleting_Updating")]
-        public virtual void DeletingAPetProfileWithoutSelectingAPet()
+        public virtual void FillOutAllFieldsCorrectlyAndCreateANewPetProfile()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Deleting a pet profile without selecting a pet", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Fill out all fields correctly and create a new pet profile", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 40
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -351,28 +294,52 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 7
+#line 11
 this.FeatureBackground();
 #line hidden
 #line 41
- testRunner.When("the user clicks on \"Delete profile\" without selecting a pet from the dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user selects the \"Create new profile\" option", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
+                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Ime",
+                            "Prezime",
+                            "Broj iskaznice",
+                            "Pasmina ljubimca",
+                            "BrojChipa",
+                            "Tezina_Kg",
+                            "Visina_Cm",
+                            "Bilješke"});
+                table9.AddRow(new string[] {
+                            "Beta",
+                            "Stjepanovic",
+                            "12345676",
+                            "Macka",
+                            "76543210",
+                            "6",
+                            "10",
+                            "Debela macketina."});
 #line 42
- testRunner.Then("the user should be notified that he need to select a pet to delete", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("the user fills out all fields with valid data:", ((string)(null)), table9, "And ");
+#line hidden
+#line 45
+ testRunner.And("the user clicks on the \"Create profile and digital card\" button of feature C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 46
+ testRunner.Then("the new pet is visible in the drop-down menu of pet list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Attempting to delete a pet profile with existing health records")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Deleting a pet profile without selecting a pet")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Profile_Creating_Deleting_Updating")]
-        public virtual void AttemptingToDeleteAPetProfileWithExistingHealthRecords()
+        public virtual void DeletingAPetProfileWithoutSelectingAPet()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Attempting to delete a pet profile with existing health records", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 45
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Deleting a pet profile without selecting a pet", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 48
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -392,21 +359,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 7
+#line 11
 this.FeatureBackground();
 #line hidden
-#line 46
- testRunner.When("the user selects the pet \"Mara Stjepanovic\" from the dropdown list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 47
- testRunner.And("the user clicks on the \"Delete profile\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 48
- testRunner.Then("the system displays an error message saying \"Cannot delete the selected pet profi" +
-                        "le as there are health records associated with it\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
 #line 49
- testRunner.And("the system does not delete the pet profile", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("the user clicks on \"Delete profile\" without selecting a pet from the dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 50
+ testRunner.Then("the user should be notified that he need to select a pet to delete", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -420,7 +380,7 @@ this.FeatureBackground();
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Deleting the selected pet profile with no existing health records", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 51
+#line 52
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -440,31 +400,17 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 7
+#line 11
 this.FeatureBackground();
 #line hidden
-#line 52
- testRunner.When("the user selects the pet \"Petrica Stjepanovic\" from the dropdown list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
 #line 53
- testRunner.And("the user clicks on the \"Delete profile\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("the user selects the pet \"Fleksi Stjepanovic\" from the dropdown list of feature", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 54
- testRunner.Then("the system displays a confirmation message saying \"Are you sure you want to delet" +
-                        "e this pet profile?\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("the user clicks on the \"Delete profile\" button of feature D", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 55
- testRunner.And("the user clicks on the \"Confirm\" button in the confirmation message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 56
- testRunner.And("the system displays a success message saying \"The selected pet profile has been d" +
-                        "eleted\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 57
- testRunner.Then("the system redirects the user to the Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 58
- testRunner.And("the deleted pet profile is no longer available in the dropdown list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("the deleted pet profile is no longer available in the dropdown list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -478,7 +424,7 @@ this.FeatureBackground();
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User updates pet information in their profile", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 60
+#line 57
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -498,37 +444,30 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 7
+#line 11
 this.FeatureBackground();
 #line hidden
-#line 61
+#line 58
  testRunner.When("the user selects the pet \"Mara Stjepanovic\" from the dropdown menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
                             "Ime",
                             "Prezime",
                             "Tezina_Kg",
                             "Visina_Cm"});
-                table7.AddRow(new string[] {
-                            "Maza",
+                table10.AddRow(new string[] {
+                            "Mela",
                             "Stjepanovic",
-                            "5",
-                            "10"});
-#line 62
- testRunner.And("the user updates certain enabled fields with the following information:", ((string)(null)), table7, "And ");
+                            "4",
+                            "15"});
+#line 59
+ testRunner.And("the user updates certain enabled fields with the following information:", ((string)(null)), table10, "And ");
 #line hidden
-#line 65
+#line 62
  testRunner.And("the user clicks the \"Update profile\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 66
- testRunner.Then("the pet information is successfully updated and displayed on the form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 67
- testRunner.And("the updated pet is automatically visible in the dropdown menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 68
- testRunner.And("the user receives a success message stating that the pet information was updated " +
-                        "successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 63
+ testRunner.Then("the updated pet is automatically visible in the dropdown menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -542,7 +481,7 @@ this.FeatureBackground();
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Newly registered user cannot select pet from dropdown", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 70
+#line 65
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -562,18 +501,32 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 7
+#line 11
 this.FeatureBackground();
 #line hidden
-#line 71
- testRunner.Given("the user has launched the system from the beginning", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 66
+ testRunner.When("the user clicks logout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 67
+ testRunner.Then("the user is on the welcome form of feature", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 68
+ testRunner.And("the user clicks button for login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Korisnicko",
+                            "Lozinka"});
+                table11.AddRow(new string[] {
+                            "ime1",
+                            "ime1"});
+#line 69
+ testRunner.Then("the user entering valid credentials:", ((string)(null)), table11, "Then ");
 #line hidden
 #line 72
- testRunner.And("the user has logged in successfully as a pet owner with username \"ime1\" and passw" +
-                        "ord \"ime1\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the user clicks button for login-homeForm", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 73
- testRunner.And("the user is on the Profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the user selects Profile form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 74
  testRunner.When("the user clicks on the dropdown to select a pet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -581,14 +534,6 @@ this.FeatureBackground();
 #line 75
  testRunner.Then("the user should receive a message stating that at least one pet profile needs to " +
                         "be created before selecting a pet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 76
- testRunner.And("the user should be given an option to \"Cancel\", which redirects them to the home " +
-                        "screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 77
- testRunner.And("the user should be given an option to \"Create new profile\", which redirects them " +
-                        "to the profile creation form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
