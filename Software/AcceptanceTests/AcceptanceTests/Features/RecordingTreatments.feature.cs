@@ -97,14 +97,37 @@ namespace AcceptanceTests.Features
 #line 7
 #line hidden
 #line 8
- testRunner.Given("the user has launched the system", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("the user has launched the system of feature A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 9
- testRunner.And("the user has logged in successfully as a veterinarian with username \"veterinar\" a" +
-                    "nd password \"veterinar\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the user is on the welcome form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 10
- testRunner.And("the user is on the \"Record\" page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("the user clicks on the button \"Prijava\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 11
+ testRunner.Then("the user is on the login form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
+                        "korisnickoIme",
+                        "lozinka"});
+            table13.AddRow(new string[] {
+                        "veterinar",
+                        "veterinar"});
+#line 12
+ testRunner.And("the user needs to enter vet details:", ((string)(null)), table13, "And ");
+#line hidden
+#line 15
+ testRunner.And("the user login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 16
+ testRunner.Then("the user will be successfully redirected to the initial form for vet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 17
+ testRunner.And("the user selects Recording", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 18
+ testRunner.And("the user is on the Recording form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
@@ -116,91 +139,34 @@ namespace AcceptanceTests.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User doesn\'t select a pet from the dropdown", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 12
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 7
-this.FeatureBackground();
-#line hidden
-#line 13
- testRunner.And("the user doesn\'t select a pet from the dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 14
- testRunner.Then("the form\'s functionalities should be disabled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 15
- testRunner.And("the user should be informed to select a pet before proceeding", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Adding to existing visit without illness and medication")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "RecordingTreatments")]
-        public virtual void AddingToExistingVisitWithoutIllnessAndMedication()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding to existing visit without illness and medication", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 17
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 7
-this.FeatureBackground();
-#line hidden
-#line 18
- testRunner.When("the user selects the desired pet \"Rio Anic\" from the dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 19
- testRunner.And("the user selects the existing appointment \"21/12/2022\" from the dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
 #line 20
- testRunner.And("the user leaves the fields for illness and medication empty", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 7
+this.FeatureBackground();
 #line hidden
 #line 21
- testRunner.And("the user clicks on \"Update existing visit\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("the user doesn\'t select a pet from the dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 22
- testRunner.Then("the system should prompt the user that the fields for illness and medication are " +
-                        "required", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 23
- testRunner.And("the system should not successfully complete adding to the existing visit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("the form\'s functionalities should be disabled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -214,7 +180,7 @@ this.FeatureBackground();
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Update existing visit with disease and medicine", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 25
+#line 24
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -237,34 +203,33 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
 this.FeatureBackground();
 #line hidden
-#line 26
- testRunner.Given("the user launches the system and successfully logs in as a veterinarian with vali" +
-                        "d credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 27
- testRunner.And("the user is on the \"Record\" form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 28
+#line 25
  testRunner.When("the user selects a desired pet from the dropdown menu: \"Rio Anic\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 29
- testRunner.And("the user selects an existing visit date from the dropdown menu: \"21/12/2022\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 26
+ testRunner.And("the user selects an existing visit date from the dropdown menu of featuring", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Bolest",
+                            "OpisB",
+                            "DatumB",
+                            "Lijek",
+                            "OpisL"});
+                table14.AddRow(new string[] {
+                            "slaba bolest",
+                            "opis slabe bolesti",
+                            "5.11.2022",
+                            "slabi lijek",
+                            "opis slabog lijeka"});
+#line 27
+ testRunner.And("the user fills in all remaining fields with meaningful data:", ((string)(null)), table14, "And ");
 #line hidden
 #line 30
- testRunner.And("the user fills in all remaining fields with meaningful data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 31
- testRunner.And("the user enters the disease for the selected visit and its medicine", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 32
  testRunner.And("the user clicks on the \"Update existing visit\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 33
+#line 31
  testRunner.Then("the system should successfully update the selected appointment and clear all fiel" +
                         "ds", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 34
- testRunner.And("the user should receive a confirmation message about the successful update", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -278,7 +243,7 @@ this.FeatureBackground();
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Saving a new pet visit without filling in the field \"Reason for visit\"", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 36
+#line 33
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -301,24 +266,25 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
 this.FeatureBackground();
 #line hidden
-#line 37
- testRunner.When("the user selects the pet \"Arno Anic\" from the dropdown menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 34
+ testRunner.When("the user selects the pet \"Rio Anic\" from the dropdown menu of feature", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
+                            "datum"});
+                table15.AddRow(new string[] {
+                            "12.4.2022."});
+#line 35
+ testRunner.And("the user selects a new visit date of his choice:", ((string)(null)), table15, "And ");
 #line hidden
 #line 38
- testRunner.And("the user selects a new visit date of his choice", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 39
  testRunner.And("the user does not fill in the \"Reason for visit\" field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
+#line 39
+ testRunner.And("the user clicks on \"Save visit\" button of feature", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
 #line 40
- testRunner.And("the user clicks on the \"Save visit\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 41
- testRunner.Then("the system should not save the new visit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 42
- testRunner.And("the user should receive an error message indicating that all fields are required " +
-                        "to save the visit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("the user should receive an error message indicating that all fields are required " +
+                        "to save the visit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -332,7 +298,7 @@ this.FeatureBackground();
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding a new visit record for a pet without adding disease and medication", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 44
+#line 42
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -355,39 +321,42 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
 this.FeatureBackground();
 #line hidden
-#line 45
- testRunner.When("the user selects the pet \"Arno Anic\" from the dropdown list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 43
+ testRunner.When("the user selects the pet \"Rio Anic\" from the dropdown list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 46
- testRunner.And("the user selects a new visit date of his choice", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+                TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
+                            "datum"});
+                table16.AddRow(new string[] {
+                            "17.4.2022."});
+#line 44
+ testRunner.And("the user selects a new visit date of his choice of feature:", ((string)(null)), table16, "And ");
 #line hidden
+                TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
+                            "razlog"});
+                table17.AddRow(new string[] {
+                            "jako dobar razlog"});
 #line 47
- testRunner.And("the user fills in the \"Reason for visit\" field with any reason", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 48
- testRunner.And("the user clicks the \"Save visit\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 49
- testRunner.Then("a new visit record should be saved successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("the user fills in the reason field with any reason:", ((string)(null)), table17, "And ");
 #line hidden
 #line 50
- testRunner.And("the previous data in the fields should be cleared automatically", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the user clicks saving button of feature", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 51
- testRunner.And("the user should see a success message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("the previous data in the fields should be cleared automatically because visit is " +
+                        "saved", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Cannot record new visit without filling in disease and medication fields")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Record a new visit of a pet with disease and medication")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "RecordingTreatments")]
-        public virtual void CannotRecordNewVisitWithoutFillingInDiseaseAndMedicationFields()
+        public virtual void RecordANewVisitOfAPetWithDiseaseAndMedication()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cannot record new visit without filling in disease and medication fields", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Record a new visit of a pet with disease and medication", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 53
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -412,94 +381,45 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 54
- testRunner.When("the user selects \"Ratko Stjepanovic\" from the dropdown list of pets", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the user selects a pet \"Rio Anic\" from the dropdown menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
+                TechTalk.SpecFlow.Table table18 = new TechTalk.SpecFlow.Table(new string[] {
+                            "datumPosjete",
+                            "razlog"});
+                table18.AddRow(new string[] {
+                            "13.12.2023",
+                            "dobar razlog"});
 #line 55
- testRunner.And("the user selects a desired date and reason for the visit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 56
- testRunner.And("the user clicks on the \"Save visit\" checkbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 57
- testRunner.Then("the visit should be saved successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("the user selects a date and reason for the visit:", ((string)(null)), table18, "And ");
 #line hidden
 #line 58
- testRunner.And("the fields for disease and medication should be enabled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 59
- testRunner.When("the user clicks on \"Record new visit\" without filling in the fields for disease a" +
-                        "nd medication", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 60
- testRunner.Then("the user should receive an error message stating that it is not possible to recor" +
-                        "d a new visit without filling in the fields for disease and medication", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 61
- testRunner.And("the new visit should not be recorded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Record a new visit of a pet with disease and medication")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "RecordingTreatments")]
-        public virtual void RecordANewVisitOfAPetWithDiseaseAndMedication()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Record a new visit of a pet with disease and medication", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 63
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 7
-this.FeatureBackground();
-#line hidden
-#line 64
- testRunner.When("the user selects a pet \"Ratko Stjepanovic\" from the dropdown menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 65
- testRunner.And("the user selects a date and reason for the visit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 66
  testRunner.And("the user clicks on \"Save visit\" checkbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 67
- testRunner.Then("a new visit is successfully recorded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 59
+ testRunner.Then("a new visit is successfully recorded so the fields for disease and medication are" +
+                        " enabled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 68
- testRunner.And("the fields for disease and medication are enabled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 69
+                TechTalk.SpecFlow.Table table19 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Bolest",
+                            "OpisB",
+                            "DatumB",
+                            "Lijek",
+                            "OpisL"});
+                table19.AddRow(new string[] {
+                            "slabasnasta bolest",
+                            "opis slabasne bolesti",
+                            "11.12.2022",
+                            "slabasni lijek",
+                            "opis slabasnog lijeka"});
+#line 60
  testRunner.And("the user fills in the fields for disease and medication with valid data and selec" +
-                        "ts a date for the start of symptoms", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+                        "ts a date for the start of symptoms:", ((string)(null)), table19, "And ");
 #line hidden
-#line 70
+#line 63
  testRunner.And("the user clicks on \"Record a new visit\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 71
- testRunner.Then("the new visit is successfully recorded and all fields are cleared", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 72
- testRunner.And("the user receives a visible confirmation of the successful recording of the new v" +
-                        "isit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 64
+ testRunner.Then("the new visit is successfully recorded so all fields are cleared", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -513,7 +433,7 @@ this.FeatureBackground();
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Symptom onset date is later than the visit date", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 74
+#line 66
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -536,29 +456,39 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
 this.FeatureBackground();
 #line hidden
-#line 75
- testRunner.And("the user selects the desired pet from the dropdown menu: \"Ratko Stjepanovic\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 67
+ testRunner.Given("the user selects the desired pet from the dropdown menu: \"Rio Anic\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 68
+ testRunner.When("the user selects existing visit date of pet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 69
+ testRunner.Then("the fields for diseases and medications are enabled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+                TechTalk.SpecFlow.Table table20 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Bolest",
+                            "OpisB",
+                            "Lijek",
+                            "OpisL"});
+                table20.AddRow(new string[] {
+                            "naziv bolest",
+                            "opis bolest",
+                            "naziv lijek",
+                            "opis lijek"});
+#line 70
+ testRunner.And("the user fills in the fields for disease and medication with valid data:", ((string)(null)), table20, "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table21 = new TechTalk.SpecFlow.Table(new string[] {
+                            "datumSimptoma"});
+                table21.AddRow(new string[] {
+                            "23.12.2022."});
+#line 73
+ testRunner.And("the user selects the symptom onset date:", ((string)(null)), table21, "And ");
 #line hidden
 #line 76
- testRunner.And("the user selects the date \"6.4.2023\" while filling in the visit reason with desir" +
-                        "ed, but valid data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the user clicks on \"Update existing visit\" button of feature Recording", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 77
- testRunner.And("the user clicks on the \"Save visit\" checkbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 78
- testRunner.Then("the visit is saved and the fields for diseases and medications are enabled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 79
- testRunner.And("the user fills in the fields for disease and medication with valid data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 80
- testRunner.And("the user selects the symptom onset date as \"12.4.2023\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 81
- testRunner.And("the user clicks on \"Record new visit\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 82
  testRunner.Then("the system should display an error message saying that the symptom onset date mus" +
                         "t be earlier than the visit date", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -574,7 +504,7 @@ this.FeatureBackground();
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cancel selection of an existing date", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 84
+#line 79
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -597,23 +527,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
 this.FeatureBackground();
 #line hidden
-#line 85
- testRunner.When("the user selects the desired pet from the dropdown list: \"Ratko Stjepanovic\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 80
+ testRunner.When("the user selects the desired pet from the dropdown list: \"Rio Anic\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 86
+#line 81
  testRunner.And("the user selects an existing date by mistake", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 87
- testRunner.And("the user clicks on \"Cancel Selection\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 82
+ testRunner.And("the user clicks on cancellation button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 88
+#line 83
  testRunner.Then("the system should automatically clear the previous data and the selected date", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 89
- testRunner.And("the user should be returned to the initial state of the form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 90
- testRunner.And("the selection should be successfully cancelled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

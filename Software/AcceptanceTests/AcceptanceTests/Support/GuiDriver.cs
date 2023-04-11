@@ -26,7 +26,7 @@ namespace AcceptanceTests.Support
         private static WindowsDriver<WindowsElement> CreateDriverInstance()
         {
             var options = new AppiumOptions();
-            options.AddAdditionalCapability("app", @"E:\Aplikacija PetVet/PetVet.exe");//zamijeniti treba putanju
+            options.AddAdditionalCapability("app", @"C:\Program Files (x86)\RPP22_06\SetupPetVet\PetVet.exe"); //promijeniti putanju
             options.AddAdditionalCapability("deviceName", "WindowsPC");
             var wd = new WindowsDriver<WindowsElement>(new Uri("http://127.0.0.1:4723"),
            options);
