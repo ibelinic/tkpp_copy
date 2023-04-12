@@ -108,14 +108,14 @@ namespace AcceptanceTests.Features
 #line 11
  testRunner.Then("the user is on the login form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-            TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table20 = new TechTalk.SpecFlow.Table(new string[] {
                         "korisnickoIme",
                         "lozinka"});
-            table13.AddRow(new string[] {
+            table20.AddRow(new string[] {
                         "veterinar",
                         "veterinar"});
 #line 12
- testRunner.And("the user needs to enter vet details:", ((string)(null)), table13, "And ");
+ testRunner.And("the user needs to enter vet details:", ((string)(null)), table20, "And ");
 #line hidden
 #line 15
  testRunner.And("the user login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -209,20 +209,20 @@ this.FeatureBackground();
 #line 26
  testRunner.And("the user selects an existing visit date from the dropdown menu of featuring", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table21 = new TechTalk.SpecFlow.Table(new string[] {
                             "Bolest",
                             "OpisB",
                             "DatumB",
                             "Lijek",
                             "OpisL"});
-                table14.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "slaba bolest",
                             "opis slabe bolesti",
                             "5.11.2022",
                             "slabi lijek",
                             "opis slabog lijeka"});
 #line 27
- testRunner.And("the user fills in all remaining fields with meaningful data:", ((string)(null)), table14, "And ");
+ testRunner.And("the user fills in all remaining fields with meaningful data:", ((string)(null)), table21, "And ");
 #line hidden
 #line 30
  testRunner.And("the user clicks on the \"Update existing visit\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -269,12 +269,12 @@ this.FeatureBackground();
 #line 34
  testRunner.When("the user selects the pet \"Rio Anic\" from the dropdown menu of feature", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table22 = new TechTalk.SpecFlow.Table(new string[] {
                             "datum"});
-                table15.AddRow(new string[] {
+                table22.AddRow(new string[] {
                             "12.4.2022."});
 #line 35
- testRunner.And("the user selects a new visit date of his choice:", ((string)(null)), table15, "And ");
+ testRunner.And("the user selects a new visit date of his choice:", ((string)(null)), table22, "And ");
 #line hidden
 #line 38
  testRunner.And("the user does not fill in the \"Reason for visit\" field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -324,19 +324,19 @@ this.FeatureBackground();
 #line 43
  testRunner.When("the user selects the pet \"Rio Anic\" from the dropdown list", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table23 = new TechTalk.SpecFlow.Table(new string[] {
                             "datum"});
-                table16.AddRow(new string[] {
+                table23.AddRow(new string[] {
                             "17.4.2022."});
 #line 44
- testRunner.And("the user selects a new visit date of his choice of feature:", ((string)(null)), table16, "And ");
+ testRunner.And("the user selects a new visit date of his choice of feature:", ((string)(null)), table23, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table24 = new TechTalk.SpecFlow.Table(new string[] {
                             "razlog"});
-                table17.AddRow(new string[] {
+                table24.AddRow(new string[] {
                             "jako dobar razlog"});
 #line 47
- testRunner.And("the user fills in the reason field with any reason:", ((string)(null)), table17, "And ");
+ testRunner.And("the user fills in the reason field with any reason:", ((string)(null)), table24, "And ");
 #line hidden
 #line 50
  testRunner.And("the user clicks saving button of feature", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -383,14 +383,14 @@ this.FeatureBackground();
 #line 54
  testRunner.When("the user selects a pet \"Rio Anic\" from the dropdown menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table18 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table25 = new TechTalk.SpecFlow.Table(new string[] {
                             "datumPosjete",
                             "razlog"});
-                table18.AddRow(new string[] {
+                table25.AddRow(new string[] {
                             "13.12.2023",
                             "dobar razlog"});
 #line 55
- testRunner.And("the user selects a date and reason for the visit:", ((string)(null)), table18, "And ");
+ testRunner.And("the user selects a date and reason for the visit:", ((string)(null)), table25, "And ");
 #line hidden
 #line 58
  testRunner.And("the user clicks on \"Save visit\" checkbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -399,13 +399,13 @@ this.FeatureBackground();
  testRunner.Then("a new visit is successfully recorded so the fields for disease and medication are" +
                         " enabled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-                TechTalk.SpecFlow.Table table19 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table26 = new TechTalk.SpecFlow.Table(new string[] {
                             "Bolest",
                             "OpisB",
                             "DatumB",
                             "Lijek",
                             "OpisL"});
-                table19.AddRow(new string[] {
+                table26.AddRow(new string[] {
                             "slabasnasta bolest",
                             "opis slabasne bolesti",
                             "11.12.2022",
@@ -413,7 +413,7 @@ this.FeatureBackground();
                             "opis slabasnog lijeka"});
 #line 60
  testRunner.And("the user fills in the fields for disease and medication with valid data and selec" +
-                        "ts a date for the start of symptoms:", ((string)(null)), table19, "And ");
+                        "ts a date for the start of symptoms:", ((string)(null)), table26, "And ");
 #line hidden
 #line 63
  testRunner.And("the user clicks on \"Record a new visit\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -465,25 +465,25 @@ this.FeatureBackground();
 #line 69
  testRunner.Then("the fields for diseases and medications are enabled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-                TechTalk.SpecFlow.Table table20 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table27 = new TechTalk.SpecFlow.Table(new string[] {
                             "Bolest",
                             "OpisB",
                             "Lijek",
                             "OpisL"});
-                table20.AddRow(new string[] {
+                table27.AddRow(new string[] {
                             "naziv bolest",
                             "opis bolest",
                             "naziv lijek",
                             "opis lijek"});
 #line 70
- testRunner.And("the user fills in the fields for disease and medication with valid data:", ((string)(null)), table20, "And ");
+ testRunner.And("the user fills in the fields for disease and medication with valid data:", ((string)(null)), table27, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table21 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
                             "datumSimptoma"});
-                table21.AddRow(new string[] {
+                table28.AddRow(new string[] {
                             "23.12.2022."});
 #line 73
- testRunner.And("the user selects the symptom onset date:", ((string)(null)), table21, "And ");
+ testRunner.And("the user selects the symptom onset date:", ((string)(null)), table28, "And ");
 #line hidden
 #line 76
  testRunner.And("the user clicks on \"Update existing visit\" button of feature Recording", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

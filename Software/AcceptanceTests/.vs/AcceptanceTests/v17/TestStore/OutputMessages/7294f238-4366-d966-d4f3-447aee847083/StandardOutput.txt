@@ -1,0 +1,71 @@
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\LivingDoc.SpecFlowPlugin.dll
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\AcceptanceTests.dll
+-> Using default config
+Given I launched the System
+-> done: BusyAppoitmentsStepDefinitions.GivenILaunchedTheSystem() (0.5s)
+And I am on the welcome form
+-> done: CreateDigitalCardStepDefinitions.GivenIAmOnTheWelcomeForm() (0.0s)
+When I click on the button prijava
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPrijava() (0.3s)
+Then I am on the login form
+Number of open windows: 1
+Handle: 0x006218FA, Title: FrmPrijava
+-> done: BusyAppoitmentsStepDefinitions.ThenIAmOnTheLoginForm() (1.9s)
+And I need to Enter:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | stjepan       | stjepan |
+-> done: BusyAppoitmentsStepDefinitions.ThenINeedToEnter(<table>) (1.3s)
+And I Login
+-> done: BusyAppoitmentsStepDefinitions.ThenILogin() (0.3s)
+Then I will be successfully redirected to the form for owner
+Number of open windows: 1
+Handle: 0x00061928, Title: Početna Korisnik
+-> done: BusyAppoitmentsStepDefinitions.ThenIWillBeSuccessfullyRedirectedToTheFormForOwner() (4.1s)
+When I click on the button Pregled dostupnih
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPregledDostupnih() (0.3s)
+And I am on the form Dostupni veterinari
+Number of open windows: 1
+Handle: 0x00041950, Title: Dostupni veterinari
+-> done: BusyAppoitmentsStepDefinitions.WhenIAmOnTheFormDostupniVeterinari() (1.8s)
+And I select the veterinarian Klara Klaric from the dropdown list of veterinarians
+-> done: AppointmentRegistrationStepDefinitions.WhenISelectTheVeterinarianKlaraKlaricFromTheDropdownListOfVeterinarians() (0.9s)
+And I select the second row in data grid view
+-> error: Unexpected error. Unimplemented Command: css selector locator strategy is not supported (0.1s)
+And I click the button Odjavi termin
+-> skipped because of previous errors
+Then I should should receive a message stating Nemate pravo odjaviti ovaj termin
+-> skipped because of previous errors
+
+
+TestContext Messages:
+Given I launched the System
+-> done: BusyAppoitmentsStepDefinitions.GivenILaunchedTheSystem() (0.5s)
+And I am on the welcome form
+-> done: CreateDigitalCardStepDefinitions.GivenIAmOnTheWelcomeForm() (0.0s)
+When I click on the button prijava
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPrijava() (0.3s)
+Then I am on the login form
+-> done: BusyAppoitmentsStepDefinitions.ThenIAmOnTheLoginForm() (1.9s)
+And I need to Enter:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | stjepan       | stjepan |
+-> done: BusyAppoitmentsStepDefinitions.ThenINeedToEnter(<table>) (1.3s)
+And I Login
+-> done: BusyAppoitmentsStepDefinitions.ThenILogin() (0.3s)
+Then I will be successfully redirected to the form for owner
+-> done: BusyAppoitmentsStepDefinitions.ThenIWillBeSuccessfullyRedirectedToTheFormForOwner() (4.1s)
+When I click on the button Pregled dostupnih
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPregledDostupnih() (0.3s)
+And I am on the form Dostupni veterinari
+-> done: BusyAppoitmentsStepDefinitions.WhenIAmOnTheFormDostupniVeterinari() (1.8s)
+And I select the veterinarian Klara Klaric from the dropdown list of veterinarians
+-> done: AppointmentRegistrationStepDefinitions.WhenISelectTheVeterinarianKlaraKlaricFromTheDropdownListOfVeterinarians() (0.9s)
+And I select the second row in data grid view
+-> error: Unexpected error. Unimplemented Command: css selector locator strategy is not supported (0.1s)
+And I click the button Odjavi termin
+-> skipped because of previous errors
+Then I should should receive a message stating Nemate pravo odjaviti ovaj termin
+-> skipped because of previous errors

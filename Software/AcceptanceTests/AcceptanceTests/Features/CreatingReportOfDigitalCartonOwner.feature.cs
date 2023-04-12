@@ -105,14 +105,14 @@ namespace AcceptanceTests.Features
 #line 9
  testRunner.Then("User is on login form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
                         "korisnickoIme",
                         "lozinka"});
-            table2.AddRow(new string[] {
+            table9.AddRow(new string[] {
                         "ana",
                         "ana"});
 #line 10
- testRunner.And("User needs to enter details:", ((string)(null)), table2, "And ");
+ testRunner.And("User needs to enter details:", ((string)(null)), table9, "And ");
 #line hidden
 #line 13
  testRunner.And("User login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -156,12 +156,12 @@ this.FeatureBackground();
 #line 17
  testRunner.Given("User need to go to profil", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
                             "ljubimac"});
-                table3.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "Rio Anic"});
 #line 18
- testRunner.When("User selects pet:", ((string)(null)), table3, "When ");
+ testRunner.When("User selects pet:", ((string)(null)), table10, "When ");
 #line hidden
 #line 21
  testRunner.And("User goes to digital carton", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

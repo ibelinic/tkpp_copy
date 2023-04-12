@@ -113,14 +113,14 @@ So that he can manage profiles.", ProgrammingLanguage.CSharp, ((string[])(null))
 #line 15
  testRunner.Then("the user is on the login form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-            TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
                         "korisnickoIme",
                         "lozinka"});
-            table7.AddRow(new string[] {
+            table14.AddRow(new string[] {
                         "stjepan",
                         "stjepan"});
 #line 16
- testRunner.And("the user needs to enter details:", ((string)(null)), table7, "And ");
+ testRunner.And("the user needs to enter details:", ((string)(null)), table14, "And ");
 #line hidden
 #line 19
  testRunner.And("the user login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -170,7 +170,7 @@ this.FeatureBackground();
 #line 25
  testRunner.When("the user selects the \"Create new profile\" option", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
                             "Ime",
                             "Broj iskaznice",
                             "Pasmina ljubimca",
@@ -178,7 +178,7 @@ this.FeatureBackground();
                             "Tezina_Kg",
                             "Visina_Cm",
                             "Bilješke"});
-                table8.AddRow(new string[] {
+                table15.AddRow(new string[] {
                             "Lana",
                             "89076548",
                             "Macka",
@@ -187,7 +187,7 @@ this.FeatureBackground();
                             "10",
                             "Zdrava macka"});
 #line 26
- testRunner.And("the user fills out the required fields except for one field:", ((string)(null)), table8, "And ");
+ testRunner.And("the user fills out the required fields except for one field:", ((string)(null)), table15, "And ");
 #line hidden
 #line 29
  testRunner.And("the user clicks on \"Create profile and digital card\" button of feature A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -234,7 +234,7 @@ this.FeatureBackground();
 #line 33
  testRunner.When("the user selects the \"Create new profile\" option", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
                             "Ime",
                             "Prezime",
                             "Broj iskaznice",
@@ -243,7 +243,7 @@ this.FeatureBackground();
                             "Tezina_Kg",
                             "Visina_Cm",
                             "Bilješke"});
-                table9.AddRow(new string[] {
+                table16.AddRow(new string[] {
                             "Petrica",
                             "Stjepanovic",
                             "1234567u",
@@ -253,7 +253,7 @@ this.FeatureBackground();
                             "10",
                             "Debela macka."});
 #line 34
- testRunner.And("the user fills out the fields with the following information:", ((string)(null)), table9, "And ");
+ testRunner.And("the user fills out the fields with the following information:", ((string)(null)), table16, "And ");
 #line hidden
 #line 37
  testRunner.And("the user clicks on the \"Create profile and digital card\" button of feature B", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -300,7 +300,7 @@ this.FeatureBackground();
 #line 41
  testRunner.When("the user selects the \"Create new profile\" option", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
                             "Ime",
                             "Prezime",
                             "Broj iskaznice",
@@ -309,7 +309,7 @@ this.FeatureBackground();
                             "Tezina_Kg",
                             "Visina_Cm",
                             "Bilješke"});
-                table10.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Beta",
                             "Stjepanovic",
                             "12345676",
@@ -319,7 +319,7 @@ this.FeatureBackground();
                             "10",
                             "Debela macketina."});
 #line 42
- testRunner.And("the user fills out all fields with valid data:", ((string)(null)), table10, "And ");
+ testRunner.And("the user fills out all fields with valid data:", ((string)(null)), table17, "And ");
 #line hidden
 #line 45
  testRunner.And("the user clicks on the \"Create profile and digital card\" button of feature C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -450,18 +450,18 @@ this.FeatureBackground();
 #line 58
  testRunner.When("the user selects the pet \"Mara Stjepanovic\" from the dropdown menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table18 = new TechTalk.SpecFlow.Table(new string[] {
                             "Ime",
                             "Prezime",
                             "Tezina_Kg",
                             "Visina_Cm"});
-                table11.AddRow(new string[] {
+                table18.AddRow(new string[] {
                             "Mela",
                             "Stjepanovic",
                             "4",
                             "15"});
 #line 59
- testRunner.And("the user updates certain enabled fields with the following information:", ((string)(null)), table11, "And ");
+ testRunner.And("the user updates certain enabled fields with the following information:", ((string)(null)), table18, "And ");
 #line hidden
 #line 62
  testRunner.And("the user clicks the \"Update profile\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -513,14 +513,14 @@ this.FeatureBackground();
 #line 68
  testRunner.And("the user clicks button for login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table19 = new TechTalk.SpecFlow.Table(new string[] {
                             "Korisnicko",
                             "Lozinka"});
-                table12.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "ime1",
                             "ime1"});
 #line 69
- testRunner.Then("the user entering valid credentials:", ((string)(null)), table12, "Then ");
+ testRunner.Then("the user entering valid credentials:", ((string)(null)), table19, "Then ");
 #line hidden
 #line 72
  testRunner.And("the user clicks button for login-homeForm", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
