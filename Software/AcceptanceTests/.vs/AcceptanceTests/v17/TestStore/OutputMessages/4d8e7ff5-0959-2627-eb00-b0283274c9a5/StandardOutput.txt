@@ -1,0 +1,77 @@
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\LivingDoc.SpecFlowPlugin.dll
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\AcceptanceTests.dll
+-> Using default config
+Given I launched the System
+-> done: BusyAppoitmentsStepDefinitions.GivenILaunchedTheSystem() (0.4s)
+And I am on the welcome form
+-> done: CreateDigitalCardStepDefinitions.GivenIAmOnTheWelcomeForm() (0.0s)
+When I click on the button prijava
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPrijava() (0.3s)
+Then I am on the login form
+Number of open windows: 1
+Handle: 0x00130C0C, Title: FrmPrijava
+-> done: BusyAppoitmentsStepDefinitions.ThenIAmOnTheLoginForm() (1.4s)
+And I need to Enter:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | stjepan       | stjepan |
+-> done: BusyAppoitmentsStepDefinitions.ThenINeedToEnter(<table>) (1.3s)
+And I Login
+-> done: BusyAppoitmentsStepDefinitions.ThenILogin() (0.3s)
+Then I will be successfully redirected to the form for owner
+Number of open windows: 1
+Handle: 0x000C06E4, Title: Početna Korisnik
+-> done: BusyAppoitmentsStepDefinitions.ThenIWillBeSuccessfullyRedirectedToTheFormForOwner() (3.5s)
+When I click on the button Pregled dostupnih
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPregledDostupnih() (0.3s)
+And I am on the form Dostupni veterinari
+Number of open windows: 1
+Handle: 0x000D06E4, Title: Dostupni veterinari
+-> done: BusyAppoitmentsStepDefinitions.WhenIAmOnTheFormDostupniVeterinari() (1.3s)
+And I select the veterinarian Klara Klaric from the dropdown list of veterinarians
+-> done: AppointmentRegistrationStepDefinitions.WhenISelectTheVeterinarianKlaraKlaricFromTheDropdownListOfVeterinarians() (0.9s)
+And I then fill with the following details:
+  --- table step argument ---
+  | datum      | vrijeme_pocetka | vrijeme_zavrsetka | ljubimac         |
+  | 13.4.2023. | 12:00:00        | 12:30:00          | Mela Stjepanovic |
+-> done: AppointmentRegistrationStepDefinitions.WhenIThenFillWithTheFollowingDetails(<table>) (2.3s)
+And I click the button Prijavi termin
+-> done: AppointmentRegistrationStepDefinitions.WhenIClickTheButtonPrijaviTermin() (0.3s)
+Then I should see the appoitment in the busy section
+-> error: Assert.Fail failed. Appointment not found in busy section (0.4s)
+
+
+TestContext Messages:
+Given I launched the System
+-> done: BusyAppoitmentsStepDefinitions.GivenILaunchedTheSystem() (0.4s)
+And I am on the welcome form
+-> done: CreateDigitalCardStepDefinitions.GivenIAmOnTheWelcomeForm() (0.0s)
+When I click on the button prijava
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPrijava() (0.3s)
+Then I am on the login form
+-> done: BusyAppoitmentsStepDefinitions.ThenIAmOnTheLoginForm() (1.4s)
+And I need to Enter:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | stjepan       | stjepan |
+-> done: BusyAppoitmentsStepDefinitions.ThenINeedToEnter(<table>) (1.3s)
+And I Login
+-> done: BusyAppoitmentsStepDefinitions.ThenILogin() (0.3s)
+Then I will be successfully redirected to the form for owner
+-> done: BusyAppoitmentsStepDefinitions.ThenIWillBeSuccessfullyRedirectedToTheFormForOwner() (3.5s)
+When I click on the button Pregled dostupnih
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPregledDostupnih() (0.3s)
+And I am on the form Dostupni veterinari
+-> done: BusyAppoitmentsStepDefinitions.WhenIAmOnTheFormDostupniVeterinari() (1.3s)
+And I select the veterinarian Klara Klaric from the dropdown list of veterinarians
+-> done: AppointmentRegistrationStepDefinitions.WhenISelectTheVeterinarianKlaraKlaricFromTheDropdownListOfVeterinarians() (0.9s)
+And I then fill with the following details:
+  --- table step argument ---
+  | datum      | vrijeme_pocetka | vrijeme_zavrsetka | ljubimac         |
+  | 13.4.2023. | 12:00:00        | 12:30:00          | Mela Stjepanovic |
+-> done: AppointmentRegistrationStepDefinitions.WhenIThenFillWithTheFollowingDetails(<table>) (2.3s)
+And I click the button Prijavi termin
+-> done: AppointmentRegistrationStepDefinitions.WhenIClickTheButtonPrijaviTermin() (0.3s)
+Then I should see the appoitment in the busy section
+-> error: Assert.Fail failed. Appointment not found in busy section (0.4s)

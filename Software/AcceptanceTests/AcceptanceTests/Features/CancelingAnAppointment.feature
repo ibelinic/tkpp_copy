@@ -19,7 +19,7 @@ Scenario: Canceling an appointment that was not registered by the registered use
 	When I click on the button Pregled dostupnih
 	And I am on the form Dostupni veterinari
 	And I select the veterinarian Klara Klaric from the dropdown list of veterinarians
-	And I select the second row in data grid view 
+	And I select the first row in data grid view 
 	And I click the button Odjavi termin
 	Then I should should receive a message stating Nemate pravo odjaviti ovaj termin
 
@@ -27,7 +27,7 @@ Scenario: Cancellation of an appointment reported by a registered user
 	When I click on the button Pregled dostupnih
 	And I am on the form Dostupni veterinari
 	And I select the veterinarian Klara Klaric from the dropdown list of veterinarians
-	And I select the third row in data grid view 
+	And I select the first row in data grid view 
 	And I click the button Odjavi termin
 	Then I should no longer see that appoitment
 	And I should should receive a message Termin uspješno odjavljen

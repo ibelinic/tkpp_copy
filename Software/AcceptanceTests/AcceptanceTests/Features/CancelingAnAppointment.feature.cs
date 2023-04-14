@@ -165,7 +165,7 @@ this.FeatureBackground();
  testRunner.And("I select the veterinarian Klara Klaric from the dropdown list of veterinarians", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 22
- testRunner.And("I select the second row in data grid view", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I select the first row in data grid view", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 23
  testRunner.And("I click the button Odjavi termin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -218,7 +218,7 @@ this.FeatureBackground();
  testRunner.And("I select the veterinarian Klara Klaric from the dropdown list of veterinarians", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 30
- testRunner.And("I select the third row in data grid view", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I select the first row in data grid view", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 31
  testRunner.And("I click the button Odjavi termin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

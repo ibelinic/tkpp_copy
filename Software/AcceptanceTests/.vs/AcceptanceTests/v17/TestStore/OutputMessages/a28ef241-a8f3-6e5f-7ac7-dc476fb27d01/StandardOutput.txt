@@ -1,0 +1,79 @@
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\LivingDoc.SpecFlowPlugin.dll
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\AcceptanceTests.dll
+-> Using default config
+Given I launched the System
+-> done: BusyAppoitmentsStepDefinitions.GivenILaunchedTheSystem() (0.4s)
+And I am on the welcome form
+-> done: CreateDigitalCardStepDefinitions.GivenIAmOnTheWelcomeForm() (0.0s)
+When I click on the button prijava
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPrijava() (0.3s)
+Then I am on the login form
+Number of open windows: 1
+Handle: 0x00100BEC, Title: FrmPrijava
+-> done: BusyAppoitmentsStepDefinitions.ThenIAmOnTheLoginForm() (1.3s)
+And I need to Enter:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | stjepan       | stjepan |
+-> done: BusyAppoitmentsStepDefinitions.ThenINeedToEnter(<table>) (1.3s)
+And I Login
+-> done: BusyAppoitmentsStepDefinitions.ThenILogin() (0.3s)
+Then I will be successfully redirected to the form for owner
+Number of open windows: 1
+Handle: 0x00090BC8, Title: Početna Korisnik
+-> done: BusyAppoitmentsStepDefinitions.ThenIWillBeSuccessfullyRedirectedToTheFormForOwner() (3.5s)
+When I click on the button Pregled dostupnih
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPregledDostupnih() (0.3s)
+And I am on the form Dostupni veterinari
+Number of open windows: 1
+Handle: 0x000A0BC8, Title: Dostupni veterinari
+-> done: BusyAppoitmentsStepDefinitions.WhenIAmOnTheFormDostupniVeterinari() (1.3s)
+And I select the veterinarian Klara Klaric from the dropdown list of veterinarians
+-> done: AppointmentRegistrationStepDefinitions.WhenISelectTheVeterinarianKlaraKlaricFromTheDropdownListOfVeterinarians() (1.0s)
+And I then fill with the following details:
+  --- table step argument ---
+  | datum      | vrijeme_pocetka | vrijeme_zavrsetka | ljubimac         |
+  | 15.4.2023. | 21:00:00        | 21:30:00          | Mela Stjepanovic |
+-> done: AppointmentRegistrationStepDefinitions.WhenIThenFillWithTheFollowingDetails(<table>) (2.3s)
+And I click the button Prijavi termin
+-> done: AppointmentRegistrationStepDefinitions.WhenIClickTheButtonPrijaviTermin() (0.3s)
+Then I should receive a message stating Veterinar je u tom vremenu zauzet
+Number of open windows: 1
+Handle: 0x000A0BC8, Title: Dostupni veterinari
+-> error: An element could not be located on the page using the given search parameters. (8.0s)
+
+
+TestContext Messages:
+Given I launched the System
+-> done: BusyAppoitmentsStepDefinitions.GivenILaunchedTheSystem() (0.4s)
+And I am on the welcome form
+-> done: CreateDigitalCardStepDefinitions.GivenIAmOnTheWelcomeForm() (0.0s)
+When I click on the button prijava
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPrijava() (0.3s)
+Then I am on the login form
+-> done: BusyAppoitmentsStepDefinitions.ThenIAmOnTheLoginForm() (1.3s)
+And I need to Enter:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | stjepan       | stjepan |
+-> done: BusyAppoitmentsStepDefinitions.ThenINeedToEnter(<table>) (1.3s)
+And I Login
+-> done: BusyAppoitmentsStepDefinitions.ThenILogin() (0.3s)
+Then I will be successfully redirected to the form for owner
+-> done: BusyAppoitmentsStepDefinitions.ThenIWillBeSuccessfullyRedirectedToTheFormForOwner() (3.5s)
+When I click on the button Pregled dostupnih
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPregledDostupnih() (0.3s)
+And I am on the form Dostupni veterinari
+-> done: BusyAppoitmentsStepDefinitions.WhenIAmOnTheFormDostupniVeterinari() (1.3s)
+And I select the veterinarian Klara Klaric from the dropdown list of veterinarians
+-> done: AppointmentRegistrationStepDefinitions.WhenISelectTheVeterinarianKlaraKlaricFromTheDropdownListOfVeterinarians() (1.0s)
+And I then fill with the following details:
+  --- table step argument ---
+  | datum      | vrijeme_pocetka | vrijeme_zavrsetka | ljubimac         |
+  | 15.4.2023. | 21:00:00        | 21:30:00          | Mela Stjepanovic |
+-> done: AppointmentRegistrationStepDefinitions.WhenIThenFillWithTheFollowingDetails(<table>) (2.3s)
+And I click the button Prijavi termin
+-> done: AppointmentRegistrationStepDefinitions.WhenIClickTheButtonPrijaviTermin() (0.3s)
+Then I should receive a message stating Veterinar je u tom vremenu zauzet
+-> error: An element could not be located on the page using the given search parameters. (8.0s)

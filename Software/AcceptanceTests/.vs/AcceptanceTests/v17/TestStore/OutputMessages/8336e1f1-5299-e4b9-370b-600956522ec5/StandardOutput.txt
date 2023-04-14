@@ -1,0 +1,73 @@
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\LivingDoc.SpecFlowPlugin.dll
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\AcceptanceTests.dll
+-> Using default config
+Given I launched the System
+-> done: BusyAppoitmentsStepDefinitions.GivenILaunchedTheSystem() (0.3s)
+And I am on the welcome form
+-> done: CreateDigitalCardStepDefinitions.GivenIAmOnTheWelcomeForm() (0.1s)
+When I click on the button prijava
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPrijava() (0.3s)
+Then I am on the login form
+Number of open windows: 1
+Handle: 0x001F0A2E, Title: FrmPrijava
+-> done: BusyAppoitmentsStepDefinitions.ThenIAmOnTheLoginForm() (1.5s)
+And I need to Enter:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | stjepan       | stjepan |
+-> done: BusyAppoitmentsStepDefinitions.ThenINeedToEnter(<table>) (1.3s)
+And I Login
+-> done: BusyAppoitmentsStepDefinitions.ThenILogin() (0.3s)
+Then I will be successfully redirected to the form for owner
+Number of open windows: 1
+Handle: 0x000E0A1E, Title: Početna Korisnik
+-> done: BusyAppoitmentsStepDefinitions.ThenIWillBeSuccessfullyRedirectedToTheFormForOwner() (3.0s)
+When I click on the button Pregled dostupnih
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPregledDostupnih() (0.3s)
+And I am on the form Dostupni veterinari
+Number of open windows: 1
+Handle: 0x000F0A1E, Title: Dostupni veterinari
+-> done: BusyAppoitmentsStepDefinitions.WhenIAmOnTheFormDostupniVeterinari() (1.4s)
+And I select the veterinarian Klara Klaric from the dropdown list of veterinarians
+-> done: AppointmentRegistrationStepDefinitions.WhenISelectTheVeterinarianKlaraKlaricFromTheDropdownListOfVeterinarians() (0.9s)
+And I select the first row in data grid view
+-> done: CancelingAnAppointmentStepDefinitions.WhenISelectTheFirstRowInDataGridView() (0.7s)
+And I click the button Odjavi termin
+-> done: CancelingAnAppointmentStepDefinitions.WhenIClickTheButtonOdjaviTermin() (0.3s)
+Then I should should receive a message stating Nemate pravo odjaviti ovaj termin
+Number of open windows: 1
+Handle: 0x000F0A1E, Title: Dostupni veterinari
+-> error: An element could not be located on the page using the given search parameters. (7.9s)
+
+
+TestContext Messages:
+Given I launched the System
+-> done: BusyAppoitmentsStepDefinitions.GivenILaunchedTheSystem() (0.3s)
+And I am on the welcome form
+-> done: CreateDigitalCardStepDefinitions.GivenIAmOnTheWelcomeForm() (0.1s)
+When I click on the button prijava
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPrijava() (0.3s)
+Then I am on the login form
+-> done: BusyAppoitmentsStepDefinitions.ThenIAmOnTheLoginForm() (1.5s)
+And I need to Enter:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | stjepan       | stjepan |
+-> done: BusyAppoitmentsStepDefinitions.ThenINeedToEnter(<table>) (1.3s)
+And I Login
+-> done: BusyAppoitmentsStepDefinitions.ThenILogin() (0.3s)
+Then I will be successfully redirected to the form for owner
+-> done: BusyAppoitmentsStepDefinitions.ThenIWillBeSuccessfullyRedirectedToTheFormForOwner() (3.0s)
+When I click on the button Pregled dostupnih
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPregledDostupnih() (0.3s)
+And I am on the form Dostupni veterinari
+-> done: BusyAppoitmentsStepDefinitions.WhenIAmOnTheFormDostupniVeterinari() (1.4s)
+And I select the veterinarian Klara Klaric from the dropdown list of veterinarians
+-> done: AppointmentRegistrationStepDefinitions.WhenISelectTheVeterinarianKlaraKlaricFromTheDropdownListOfVeterinarians() (0.9s)
+And I select the first row in data grid view
+-> done: CancelingAnAppointmentStepDefinitions.WhenISelectTheFirstRowInDataGridView() (0.7s)
+And I click the button Odjavi termin
+-> done: CancelingAnAppointmentStepDefinitions.WhenIClickTheButtonOdjaviTermin() (0.3s)
+Then I should should receive a message stating Nemate pravo odjaviti ovaj termin
+-> error: An element could not be located on the page using the given search parameters. (7.9s)

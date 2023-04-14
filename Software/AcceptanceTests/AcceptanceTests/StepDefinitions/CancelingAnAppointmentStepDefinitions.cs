@@ -1,6 +1,7 @@
 using AcceptanceTests.Support;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Threading;
@@ -14,16 +15,16 @@ namespace AcceptanceTests.StepDefinitions
         [When(@"I select the second row in data grid view")]
         public void WhenISelectTheSecondRowInDataGridView()
         {
-            var driverLogin = GuiDriver.GetDriver();
-            var dgvApp = driverLogin.FindElementByAccessibilityId("dgvDostupniVeterinari");
+            var driver = GuiDriver.GetDriver();
+            var dgvApp = driver.FindElementByAccessibilityId("dgvDostupniVeterinari");
 
-            var secondRow = dgvApp.FindElement(By.CssSelector("tr:nth-child(2)"));
-            Thread.Sleep(1000); // Wait for 1 second
-            var cells = secondRow.FindElements(By.TagName("td"));
-            if (cells.Count > 0)
-            {
-                cells[0].Click(); // Click the first cell of the second row
-            }
+            Actions action = new Actions(driver);
+            action.MoveToElement(dgvApp, dgvApp.Size.Width - 10, dgvApp.Size.Height / 2).Click().Perform();
+
+            Thread.Sleep(2000);
+
+            dgvApp.SendKeys(Keys.Down);
+            dgvApp.Click();
         }
 
         [When(@"I click the button Odjavi termin")]
@@ -56,21 +57,22 @@ namespace AcceptanceTests.StepDefinitions
             }
         }
 
-        [When(@"I select the third row in data grid view")]
-        public void WhenISelectTheThirdRowInDataGridView()
+        [When(@"I select the first row in data grid view")]
+        public void WhenISelectTheFirstRowInDataGridView()
         {
-            var driverLogin = GuiDriver.GetDriver();
-            var dgvApp = driverLogin.FindElementByAccessibilityId("dgvDostupniVeterinari");
+            var driver = GuiDriver.GetOrCreateDriver();
 
-            var rows = dgvApp.FindElements(By.XPath("//tr"));
-            if (rows.Count >= 3)
+            var formSlobodni = driver.FindElementByAccessibilityId("FrmDostupniVeterinari");
+            var dgvDostupni = formSlobodni.FindElementByAccessibilityId("dgvDostupniVeterinari");
+
+            Thread.Sleep(500);
+
+            var rows = dgvDostupni.FindElements(By.ClassName("DataGridViewRow"));
+
+            if (rows.Count > 0)
             {
-                var secondRow = rows[1];
-                var cells = secondRow.FindElements(By.XPath("./td"));
-                if (cells.Count > 0)
-                {
-                    cells[0].Click(); 
-                }
+                var firstCell = rows[0].FindElement(By.XPath(".//DataGridCell[1]"));
+                ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].click();", firstCell);
             }
         }
 

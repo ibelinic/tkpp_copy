@@ -1,0 +1,69 @@
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\LivingDoc.SpecFlowPlugin.dll
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\AcceptanceTests.dll
+-> Using default config
+Given I launched the System
+-> done: BusyAppoitmentsStepDefinitions.GivenILaunchedTheSystem() (0.4s)
+And I am on the welcome form
+-> done: CreateDigitalCardStepDefinitions.GivenIAmOnTheWelcomeForm() (0.1s)
+When I click on the button prijava
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPrijava() (0.3s)
+Then I am on the login form
+Number of open windows: 1
+Handle: 0x000E0BC4, Title: FrmPrijava
+-> done: BusyAppoitmentsStepDefinitions.ThenIAmOnTheLoginForm() (1.3s)
+And I need to Enter:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | stjepan       | stjepan |
+-> done: BusyAppoitmentsStepDefinitions.ThenINeedToEnter(<table>) (1.3s)
+And I Login
+-> done: BusyAppoitmentsStepDefinitions.ThenILogin() (0.3s)
+Then I will be successfully redirected to the form for owner
+Number of open windows: 1
+Handle: 0x00080B9C, Title: Početna Korisnik
+-> done: BusyAppoitmentsStepDefinitions.ThenIWillBeSuccessfullyRedirectedToTheFormForOwner() (3.5s)
+When I click on the button Pregled dostupnih
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPregledDostupnih() (0.3s)
+And I am on the form Dostupni veterinari
+Number of open windows: 1
+Handle: 0x00090B9C, Title: Dostupni veterinari
+-> done: BusyAppoitmentsStepDefinitions.WhenIAmOnTheFormDostupniVeterinari() (1.3s)
+And I select the veterinarian Klara Klaric from the dropdown list of veterinarians
+-> done: AppointmentRegistrationStepDefinitions.WhenISelectTheVeterinarianKlaraKlaricFromTheDropdownListOfVeterinarians() (1.0s)
+And I click the button Prijavi termin
+-> done: AppointmentRegistrationStepDefinitions.WhenIClickTheButtonPrijaviTermin() (0.4s)
+Then I should receive a message stating Ne mozete prijaviti termin u trenutnom vremenu
+Number of open windows: 1
+Handle: 0x00090B9C, Title: Dostupni veterinari
+-> error: An element could not be located on the page using the given search parameters. (8.0s)
+
+
+TestContext Messages:
+Given I launched the System
+-> done: BusyAppoitmentsStepDefinitions.GivenILaunchedTheSystem() (0.4s)
+And I am on the welcome form
+-> done: CreateDigitalCardStepDefinitions.GivenIAmOnTheWelcomeForm() (0.1s)
+When I click on the button prijava
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPrijava() (0.3s)
+Then I am on the login form
+-> done: BusyAppoitmentsStepDefinitions.ThenIAmOnTheLoginForm() (1.3s)
+And I need to Enter:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | stjepan       | stjepan |
+-> done: BusyAppoitmentsStepDefinitions.ThenINeedToEnter(<table>) (1.3s)
+And I Login
+-> done: BusyAppoitmentsStepDefinitions.ThenILogin() (0.3s)
+Then I will be successfully redirected to the form for owner
+-> done: BusyAppoitmentsStepDefinitions.ThenIWillBeSuccessfullyRedirectedToTheFormForOwner() (3.5s)
+When I click on the button Pregled dostupnih
+-> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPregledDostupnih() (0.3s)
+And I am on the form Dostupni veterinari
+-> done: BusyAppoitmentsStepDefinitions.WhenIAmOnTheFormDostupniVeterinari() (1.3s)
+And I select the veterinarian Klara Klaric from the dropdown list of veterinarians
+-> done: AppointmentRegistrationStepDefinitions.WhenISelectTheVeterinarianKlaraKlaricFromTheDropdownListOfVeterinarians() (1.0s)
+And I click the button Prijavi termin
+-> done: AppointmentRegistrationStepDefinitions.WhenIClickTheButtonPrijaviTermin() (0.4s)
+Then I should receive a message stating Ne mozete prijaviti termin u trenutnom vremenu
+-> error: An element could not be located on the page using the given search parameters. (8.0s)

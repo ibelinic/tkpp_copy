@@ -1,0 +1,78 @@
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\LivingDoc.SpecFlowPlugin.dll
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\TechTalk.SpecFlow.MSTest.SpecFlowPlugin.dll
+-> Loading plugin F:\TKIPP\tkipp-lgrzelj-iplavsic20-ibelinic20\Software\AcceptanceTests\AcceptanceTests\bin\Debug\net48\AcceptanceTests.dll
+-> Using default config
+Given User is on welcome form
+-> done: UserRegistrationStepDefinitions.GivenUserIsOnWelcomeForm() (0.4s)
+When User clicks on button prijava
+-> done: UserLoginStepDefinitions.WhenUserClicksOnButtonPrijava() (0.3s)
+Then User is on login form
+Number of open windows: 1
+Handle: 0x000809B8, Title: FrmPrijava
+-> done: UserLoginStepDefinitions.ThenUserIsOnLoginForm() (1.4s)
+And User needs to enter details:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | ana           | ana     |
+-> done: ScheduleFillingCalendarStepDefinitions.ThenUserNeedsToEnterDetails(<table>) (0.8s)
+And User login
+-> done: ScheduleFillingCalendarStepDefinitions.ThenUserLogin() (0.3s)
+Then User will be successfully redirected to the initial form for owner
+Number of open windows: 1
+Handle: 0x00110A42, Title: Početna Korisnik
+-> done: UserLoginStepDefinitions.ThenUserWillBeSuccessfullyRedirectedToTheInitialFormForOwner() (3.0s)
+Given User need to go to profil
+-> done: CreatingReportOfDigitalCartonOwnerStepDefinitions.GivenUserNeedToGoToProfil() (0.3s)
+When User selects pet:
+  --- table step argument ---
+  | ljubimac |
+  | Rio Anic |
+Number of open windows: 1
+Handle: 0x00120A42, Title: FrmProfil
+Element (id = 42.133808)
+-> done: CreatingReportOfDigitalCartonOwnerStepDefinitions.WhenUserSelectsPet(<table>) (4.6s)
+And User goes to digital carton
+-> done: CreatingReportOfDigitalCartonOwnerStepDefinitions.WhenUserGoesToDigitalCarton() (0.3s)
+And User selects pet appointment
+Number of open windows: 1
+Handle: 0x00120A42, Title: FrmProfil
+-> done: CreatingReportOfDigitalCartonOwnerStepDefinitions.WhenUserSelectsPetAppointment() (1.7s)
+And User goes to report
+-> done: CreatingReportOfDigitalCartonOwnerStepDefinitions.WhenUserGoesToReport() (0.3s)
+Then User will be able to see form with report of selected pet
+Number of open windows: 1
+Handle: 0x00120A42, Title: FrmProfil
+-> error: Assert.IsTrue failed. Naziv prozora nije ispravan (2.1s)
+
+
+TestContext Messages:
+Given User is on welcome form
+-> done: UserRegistrationStepDefinitions.GivenUserIsOnWelcomeForm() (0.4s)
+When User clicks on button prijava
+-> done: UserLoginStepDefinitions.WhenUserClicksOnButtonPrijava() (0.3s)
+Then User is on login form
+-> done: UserLoginStepDefinitions.ThenUserIsOnLoginForm() (1.4s)
+And User needs to enter details:
+  --- table step argument ---
+  | korisnickoIme | lozinka |
+  | ana           | ana     |
+-> done: ScheduleFillingCalendarStepDefinitions.ThenUserNeedsToEnterDetails(<table>) (0.8s)
+And User login
+-> done: ScheduleFillingCalendarStepDefinitions.ThenUserLogin() (0.3s)
+Then User will be successfully redirected to the initial form for owner
+-> done: UserLoginStepDefinitions.ThenUserWillBeSuccessfullyRedirectedToTheInitialFormForOwner() (3.0s)
+Given User need to go to profil
+-> done: CreatingReportOfDigitalCartonOwnerStepDefinitions.GivenUserNeedToGoToProfil() (0.3s)
+When User selects pet:
+  --- table step argument ---
+  | ljubimac |
+  | Rio Anic |
+-> done: CreatingReportOfDigitalCartonOwnerStepDefinitions.WhenUserSelectsPet(<table>) (4.6s)
+And User goes to digital carton
+-> done: CreatingReportOfDigitalCartonOwnerStepDefinitions.WhenUserGoesToDigitalCarton() (0.3s)
+And User selects pet appointment
+-> done: CreatingReportOfDigitalCartonOwnerStepDefinitions.WhenUserSelectsPetAppointment() (1.7s)
+And User goes to report
+-> done: CreatingReportOfDigitalCartonOwnerStepDefinitions.WhenUserGoesToReport() (0.3s)
+Then User will be able to see form with report of selected pet
+-> error: Assert.IsTrue failed. Naziv prozora nije ispravan (2.1s)

@@ -10,8 +10,8 @@ When I click on the button prijava
 -> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPrijava() (0.3s)
 Then I am on the login form
 Number of open windows: 1
-Handle: 0x00021904, Title: FrmPrijava
--> done: BusyAppoitmentsStepDefinitions.ThenIAmOnTheLoginForm() (1.9s)
+Handle: 0x00020B54, Title: FrmPrijava
+-> done: BusyAppoitmentsStepDefinitions.ThenIAmOnTheLoginForm() (1.5s)
 And I need to Enter:
   --- table step argument ---
   | korisnickoIme | lozinka |
@@ -21,24 +21,30 @@ And I Login
 -> done: BusyAppoitmentsStepDefinitions.ThenILogin() (0.3s)
 Then I will be successfully redirected to the form for owner
 Number of open windows: 1
-Handle: 0x007518F8, Title: Početna Korisnik
--> done: BusyAppoitmentsStepDefinitions.ThenIWillBeSuccessfullyRedirectedToTheFormForOwner() (4.1s)
+Handle: 0x00020B44, Title: Početna Korisnik
+-> done: BusyAppoitmentsStepDefinitions.ThenIWillBeSuccessfullyRedirectedToTheFormForOwner() (3.0s)
 When I click on the button Pregled dostupnih
 -> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPregledDostupnih() (0.3s)
 And I am on the form Dostupni veterinari
 Number of open windows: 1
-Handle: 0x00091840, Title: Dostupni veterinari
--> done: BusyAppoitmentsStepDefinitions.WhenIAmOnTheFormDostupniVeterinari() (1.8s)
+Handle: 0x00030B44, Title: Dostupni veterinari
+-> done: BusyAppoitmentsStepDefinitions.WhenIAmOnTheFormDostupniVeterinari() (1.4s)
 And I select the veterinarian Klara Klaric from the dropdown list of veterinarians
--> done: AppointmentRegistrationStepDefinitions.WhenISelectTheVeterinarianKlaraKlaricFromTheDropdownListOfVeterinarians() (1.0s)
-And I select the third row in data grid view
--> done: CancelingAnAppointmentStepDefinitions.WhenISelectTheThirdRowInDataGridView() (0.2s)
+-> done: AppointmentRegistrationStepDefinitions.WhenISelectTheVeterinarianKlaraKlaricFromTheDropdownListOfVeterinarians() (0.8s)
+And I select the first row in data grid view
+-> done: CancelingAnAppointmentStepDefinitions.WhenISelectTheFirstRowInDataGridView() (0.7s)
 And I click the button Odjavi termin
 -> done: CancelingAnAppointmentStepDefinitions.WhenIClickTheButtonOdjaviTermin() (0.3s)
 Then I should no longer see that appoitment
--> pending: CancelingAnAppointmentStepDefinitions.ThenIShouldNoLongerSeeThatAppoitment()
+-> done: CancelingAnAppointmentStepDefinitions.ThenIShouldNoLongerSeeThatAppoitment() (0.2s)
 And I should should receive a message Termin uspješno odjavljen
--> skipped because of previous errors
+Number of open windows: 1
+Handle: 0x00030B44, Title: Dostupni veterinari
+-> error: An element could not be located on the page using the given search parameters. (7.9s)
+
+
+Debug Trace:
+Number of rows: 0
 
 
 TestContext Messages:
@@ -49,7 +55,7 @@ And I am on the welcome form
 When I click on the button prijava
 -> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPrijava() (0.3s)
 Then I am on the login form
--> done: BusyAppoitmentsStepDefinitions.ThenIAmOnTheLoginForm() (1.9s)
+-> done: BusyAppoitmentsStepDefinitions.ThenIAmOnTheLoginForm() (1.5s)
 And I need to Enter:
   --- table step argument ---
   | korisnickoIme | lozinka |
@@ -58,18 +64,18 @@ And I need to Enter:
 And I Login
 -> done: BusyAppoitmentsStepDefinitions.ThenILogin() (0.3s)
 Then I will be successfully redirected to the form for owner
--> done: BusyAppoitmentsStepDefinitions.ThenIWillBeSuccessfullyRedirectedToTheFormForOwner() (4.1s)
+-> done: BusyAppoitmentsStepDefinitions.ThenIWillBeSuccessfullyRedirectedToTheFormForOwner() (3.0s)
 When I click on the button Pregled dostupnih
 -> done: BusyAppoitmentsStepDefinitions.WhenIClickOnTheButtonPregledDostupnih() (0.3s)
 And I am on the form Dostupni veterinari
--> done: BusyAppoitmentsStepDefinitions.WhenIAmOnTheFormDostupniVeterinari() (1.8s)
+-> done: BusyAppoitmentsStepDefinitions.WhenIAmOnTheFormDostupniVeterinari() (1.4s)
 And I select the veterinarian Klara Klaric from the dropdown list of veterinarians
--> done: AppointmentRegistrationStepDefinitions.WhenISelectTheVeterinarianKlaraKlaricFromTheDropdownListOfVeterinarians() (1.0s)
-And I select the third row in data grid view
--> done: CancelingAnAppointmentStepDefinitions.WhenISelectTheThirdRowInDataGridView() (0.2s)
+-> done: AppointmentRegistrationStepDefinitions.WhenISelectTheVeterinarianKlaraKlaricFromTheDropdownListOfVeterinarians() (0.8s)
+And I select the first row in data grid view
+-> done: CancelingAnAppointmentStepDefinitions.WhenISelectTheFirstRowInDataGridView() (0.7s)
 And I click the button Odjavi termin
 -> done: CancelingAnAppointmentStepDefinitions.WhenIClickTheButtonOdjaviTermin() (0.3s)
 Then I should no longer see that appoitment
--> pending: CancelingAnAppointmentStepDefinitions.ThenIShouldNoLongerSeeThatAppoitment()
+-> done: CancelingAnAppointmentStepDefinitions.ThenIShouldNoLongerSeeThatAppoitment() (0.2s)
 And I should should receive a message Termin uspješno odjavljen
--> skipped because of previous errors
+-> error: An element could not be located on the page using the given search parameters. (7.9s)

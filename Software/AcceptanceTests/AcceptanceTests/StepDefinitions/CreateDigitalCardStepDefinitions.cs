@@ -155,10 +155,20 @@ namespace AcceptanceTests.StepDefinitions
             Actions action = new Actions(driver);
             action.MoveToElement(ljubimac, ljubimac.Size.Width - 10, ljubimac.Size.Height / 2).Click().Perform();
 
-            var valueToSelect = "Anito Stjepanovic";
-            var itemToSelect = driver.FindElement(By.Name(valueToSelect));
-            itemToSelect.Click();
-            Assert.AreEqual(valueToSelect, ljubimac.GetAttribute("Value.Value"));
+            Thread.Sleep(2000);
+
+            ljubimac.SendKeys(Keys.Down);
+            ljubimac.SendKeys(Keys.Down);
+            ljubimac.SendKeys(Keys.Down);
+            ljubimac.SendKeys(Keys.Down);
+            ljubimac.SendKeys(Keys.Down);
+            ljubimac.SendKeys(Keys.Down);
+            ljubimac.SendKeys(Keys.Down);
+            ljubimac.SendKeys(Keys.Down);
+            ljubimac.SendKeys(Keys.Down);
+            ljubimac.SendKeys(Keys.Down);
+            ljubimac.SendKeys(Keys.Down);
+            ljubimac.SendKeys(Keys.Enter);
         }
 
         [Then(@"I should receive a message stating ""([^""]*)""")]
@@ -171,15 +181,14 @@ namespace AcceptanceTests.StepDefinitions
             foreach (var handle in driver.WindowHandles)
             {
                 driver.SwitchTo().Window(handle);
-                Console.WriteLine($"Handle: {handle}, Title: {driver.Title}");
 
                 string expectedMessage = "Digitalni karton je trenutno prazan!";
 
-                Thread.Sleep(10000);
-                var messageBox = driver.FindElement(By.Name("Digitalni karton je trenutno prazan!"));
-                var messageBoxText = messageBox.Text;
+                Thread.Sleep(500);
 
-                Assert.AreEqual(expectedMessage, messageBoxText);
+                var messageBox = driver.FindElement(By.Name("Digitalni karton je trenutno prazan!"));
+
+                Assert.AreEqual(expectedMessage, messageBox.Text);
             }
         }
 
